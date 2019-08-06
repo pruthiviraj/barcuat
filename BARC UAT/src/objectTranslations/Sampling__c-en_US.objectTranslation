@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sampling</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Samplings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Area --></label>
+        <name>Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <label><!-- LCO Code --></label>
+        <name>LCO_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- LCO Name --></label>
+        <name>LCO_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator Name --></label>
+        <name>Operator_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pincode --></label>
+        <name>Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- STB Type --></label>
+        <name>STB_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Smart Card --></label>
+        <name>Smart_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- STBID --></label>
+        <name>StbID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Town Village --></label>
+        <name>Town_Village__c</name>
+    </fields>
+    <fields>
+        <label><!-- VC No --></label>
+        <name>VC_No__c</name>
+    </fields>
+    <layouts>
+        <layout>Sampling Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

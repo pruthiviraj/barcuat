@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Api Job Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Api Job Log</value>
+    </caseValues>
+    <fields>
+        <label><!-- Api Record Count --></label>
+        <name>Api_Record_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Offset --></label>
+        <name>End_Offset__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Detail Contact --></label>
+        <name>Error_Detail_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Detail Member --></label>
+        <name>Error_Detail_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Detail TV --></label>
+        <name>Error_Detail_TV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Details Survey --></label>
+        <name>Error_Details_Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Id --></label>
+        <name>Job_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Records --></label>
+        <name>Num_of_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Offset --></label>
+        <name>Start_Offset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <layouts>
+        <layout>Api Job Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

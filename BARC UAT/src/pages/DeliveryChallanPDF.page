@@ -1,0 +1,130 @@
+<apex:page renderAs="pdf" controller="DeliveryChallanPDFCls">
+    <apex:form >
+    <html>
+        <head>
+            <apex:stylesheet value="{!$Resource.BarcStaticResource}"></apex:stylesheet>
+        </head>
+        <body class="pdf" style="font-family: Verdana, Geneva, sans-serif;">
+            <div class="default">
+                 <table width="100%" style="border: 1px solid black;">
+                    <tr>
+                        <td style="width:33.33%;margin-top:15px;padding:30px 30px"></td>
+                        <td style="width:33.33%;margin-top:15px;">
+                            <p class="bold" style="margin-top:15px;">Meterology Data Private Limited</p>
+                        </td>
+                        <td style="width:33.33%"><p class="bold text-center" style="margin-top:15px">Original for Recipient</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="default">
+                <table class="piTable">
+                    <tr>
+                        <th colspan="2" style="text-align:center;margin-top:5px"><h4>Delivery Challan</h4></th>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p><span class="bold">Delivery Challan No:</span>{!dch.name}</p></td>
+                        <td><p><span class="bold">Place of Supply:</span>{!dch.Place_of_Supply__c}</p></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p><span class="bold">Delivery Challan Date:</span>{!dch.Delivery_Challan_Date__c}</p></td>
+                        <td><p><span class="bold">Transporter Name:</span>{!dch.Transporter_Name__c}</p></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p><span class="bold">Delivery Mode:</span> {!dch.Delivery_Mode__c}</p></td>
+                        <td><p><span class="bold">Docket No.:</span>{!dch.Docket_No__c}</p></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p><span class="bold">Number of Boxes:</span>{!dch.Number_of_Boxes__c}</p></td>
+                        <td><p><span class="bold">Shipment Weight (Kg.):</span>{!dch.Shipment_Weight_Kg__c}</p></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p><span class="bold">Installer Name:</span></p></td>
+                        <td><p>{!dch.Installer_Name__c}</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="default">
+                <table class="piTable">
+                    <tr>
+                        <th style="width:20%"><p class="text-center">S.No.</p></th>
+                        <th style="width:20%"><p class="text-center">Product Type</p></th>
+                        <!--<th style="width:20%"><p>Product Description</p></th>-->
+                        <!--<th style="width:10%"><p>HSN Code</p></th>-->
+                        <th style="width:10%"><p class="text-center">Qty</p></th>
+                        <th style="width:25%"><p class="text-center">Amount</p></th>
+                        <th style="width:25%"><p class="text-center">Taxable Value</p></th>
+                    </tr>
+                    <apex:variable value="{!1}" var="cnt"/>
+                    <apex:repeat value="{!dchline}" var="dl">
+                    <tr>
+                        <td><p class="text-center">{!cnt}</p></td>
+                        <td><p class="text-center">{!dl.Kitting__r.Name}</p></td>
+                        <!--<th style="width:20%"><p>M10002530</p></th>-->
+                        <!--<th style="width:10%"><p>84714900</p></th>-->
+                        <td><p class="text-center">1</p></td>
+                        <td><p class="text-center">{!dl.Kitting_Amount__c}</p></td>
+                        <td><p class="text-center">{!dl.Total_Amount__c}</p></td>
+                    </tr>
+                    <apex:variable value="{!cnt + 1}" var="cnt"/>
+                    </apex:repeat>
+                    <tr>
+                        <td style="width:30%"><p class="bold" style="text-align:center">Sub Total</p></td>
+                        <td style="width:10%"><p></p></td>
+                        <td><p class="text-center">1</p></td>
+                        <td><p class="text-center">10,298.20</p></td>
+                        <td><p class="text-center"></p></td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%"><p class="bold" style="text-align:center">Total Count</p></td>
+                        <td style="width:10%"><p></p></td>
+                        <td><p class="text-center">1</p></td>
+                        <td colspan="2" style="width:10%"><p class="text-center"></p></td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%"><p class="bold text-center">Total</p></td> 
+                        <td style="width:10%"><p class="text-center">Tax Payable</p></td>
+                        <td><p class="text-center"></p></td>
+                        <td colspan="2" style="width:10%"><p class="text-center" style="text-align:right;margin-right:30px">0.00</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><p class="bold text-center">Transportation of goods for Installation</p></td>
+                        <td colspan="2"><p class="text-center">Ceritified that the particulars given above are true and correct</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p class="bold">Declaration:</p>
+                            <p style="margin-top:5px;margin-left:10px">1. Meterology Data Private Limited is engaged in the provision of services and registered for GST purposes.</p>
+                            <p style="margin-top:5px;margin-left:10px">2. The goods specified above are meant for provision of service and are for the purposes of
+                                    installation at panel household (within or outside the state) or for repair / replacement of
+                                    existing goods at panel household. There is no supply of these goods in any manner and
+                                    are for reason other than by way of supply of goods in any manner. No GST is payable as
+                                    there being no supply of goods.
+                            </p>
+                        </td>
+                        <td colspan="2"><p class="bold text-center">For Meterology Data Private Limited</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><p class="bold" style="text-align:right;margin-right:50px">Authorised Signatory</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="default">
+                <table class="piTable">
+                    <tr>
+                        <th><p class="text-center bold">From</p></th>
+                        <th><p class="text-center bold">To</p></th>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p><span class="bold">Name:</span> Meterology Data Pvt Ltd</p></td>
+                        <td style="width:50%"><p><span class="bold">Name:</span> Sujit Kumar ( RM )</p></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p><span class="bold">Address:</span> Godrej Collesium, Sion East MumbaiMaharashtra <span class="bold">Phone:</span> 9560941880</p></td>
+                        <td style="width:50%"><p><span class="bold">Address:</span> “C” Wing,2nd Floor, Godrej Coliseum,Sommaiya Hospital Road,Everard Nagar,Sion(E),Mumbai-400022MumbaiMaharashtra <span class="bold">Phone:</span> 1234567890</p></td>
+                    </tr>
+                </table>
+            </div>
+        </body>
+    </html>
+</apex:form>
+</apex:page>

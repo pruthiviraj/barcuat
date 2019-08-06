@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey Member</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Survey Member</value>
+    </caseValues>
+    <fields>
+        <label><!-- Access to internet --></label>
+        <name>Access_to_internet__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Age (Completed Years) --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- What best describes the ownership of this house? --></help>
+        <label><!-- Current House Ownership status --></label>
+        <name>Current_House_Ownership_status__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provided by Employer</masterLabel>
+            <translation><!-- Provided by Employer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rented</masterLabel>
+            <translation><!-- Rented --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Kindly Select the Occupation (Select the appropriate one) --></help>
+        <label><!-- Current Occupation --></label>
+        <name>Current_Occupation__c</name>
+        <picklistValues>
+            <masterLabel>Agricultural worker</masterLabel>
+            <translation><!-- Agricultural worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Artisan / Skilled/ trained labor</masterLabel>
+            <translation><!-- Artisan / Skilled/ trained labor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Businessman/Industrialist with 1-9 employees</masterLabel>
+            <translation><!-- Businessman/Industrialist with 1-9 employees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Businessman/Industrialist with more than 10 employees</masterLabel>
+            <translation><!-- Businessman/Industrialist with more than 10 employees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Businessman/Industrialist with no employees</masterLabel>
+            <translation><!-- Businessman/Industrialist with no employees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clerk/Salesman</masterLabel>
+            <translation><!-- Clerk/Salesman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor</masterLabel>
+            <translation><!-- Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farmer and landowner of the same farming land</masterLabel>
+            <translation><!-- Farmer and landowner of the same farming land --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farmer- on contract basis/ working on someone else</masterLabel>
+            <translation><!-- Farmer- on contract basis/ working on someone else --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Working</masterLabel>
+            <translation><!-- Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Officer/Executive-Junior</masterLabel>
+            <translation><!-- Officer/Executive-Junior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Officer/Executive-Middle/Senior</masterLabel>
+            <translation><!-- Officer/Executive-Middle/Senior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner of fisheries</masterLabel>
+            <translation><!-- Owner of fisheries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner of livestock</masterLabel>
+            <translation><!-- Owner of livestock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner of poultry</masterLabel>
+            <translation><!-- Owner of poultry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postman</masterLabel>
+            <translation><!-- Postman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-employed professional</masterLabel>
+            <translation><!-- Self-employed professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service (Staying in one village and working in   another village)</masterLabel>
+            <translation><!-- Service (Staying in one village and working in   another village) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service (Staying in one village and working in  City/town)</masterLabel>
+            <translation><!-- Service (Staying in one village and working in  City/town) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shop Owners</masterLabel>
+            <translation><!-- Shop Owners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Scale Traders</masterLabel>
+            <translation><!-- Small Scale Traders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supervisory level</masterLabel>
+            <translation><!-- Supervisory level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher</masterLabel>
+            <translation><!-- Teacher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Worker - with no professional training / laborer</masterLabel>
+            <translation><!-- Worker - with no professional training / laborer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Worker-with professional training/ skill set</masterLabel>
+            <translation><!-- Worker-with professional training/ skill set --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DOB --></label>
+        <name>DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of birth --></label>
+        <name>Date_of_birth__c</name>
+    </fields>
+    <fields>
+        <help><!-- In the above list of members, who takes all the decisions for purchasing daily grocery at your residence? --></help>
+        <label><!-- Decision Maker for buying groceries --></label>
+        <name>Decision_Maker_for_buying_groceries__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the educational qualification for Member (Select the appropriate one) --></help>
+        <label><!-- Education Qualification --></label>
+        <name>Education_Qualification__c</name>
+        <picklistValues>
+            <masterLabel>5th - 9th standard</masterLabel>
+            <translation><!-- 5th - 9th standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Can Read / Write but no formal schooling</masterLabel>
+            <translation><!-- Can Read / Write but no formal schooling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cannot Read/Write</masterLabel>
+            <translation><!-- Cannot Read/Write --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate–General (B.A., B.Sc., B.Com.)</masterLabel>
+            <translation><!-- Graduate–General (B.A., B.Sc., B.Com.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate–Professional (B.E., M.B.B.S., B.Tech)</masterLabel>
+            <translation><!-- Graduate–Professional (B.E., M.B.B.S., B.Tech) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Graduate-General (M.A., M.Sc., M.Com, M.Phil, PhD)</masterLabel>
+            <translation><!-- Post-Graduate-General (M.A., M.Sc., M.Com, M.Phil, PhD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Graduate-Professional (M.E., M.Tech., MBA, etc.)</masterLabel>
+            <translation><!-- Post-Graduate-Professional (M.E., M.Tech., MBA, etc.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSC/HSC(10th - 12th)</masterLabel>
+            <translation><!-- SSC/HSC(10th - 12th) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School - Up to 4th standard</masterLabel>
+            <translation><!-- School - Up to 4th standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Some College (incl. diploma but not Graduate)</masterLabel>
+            <translation><!-- Some College (incl. diploma but not Graduate) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- In the above list of members,who amongst all the member living at your residence contributes the most to household expenditure? --></help>
+        <label><!-- Highest household contributer --></label>
+        <name>Highest_household_contributer__c</name>
+    </fields>
+    <fields>
+        <help><!-- when speaking amongst the family members, which all languages are spoken? (Select Multiple Option) --></help>
+        <label><!-- Language Spoken amongst Family --></label>
+        <name>Language_Spoken_amongst_Family__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which is the most often spoken language among your family members? --></help>
+        <label><!-- Most Common lang amongst family member --></label>
+        <name>Most_Common_lang_amongst_family_member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey --></label>
+        <name>Survey__c</name>
+        <relationshipLabel><!-- Survey Member --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- In all, how many rooms are there (including kitchen but excluding toilets) for your household’s use? --></help>
+        <label><!-- Total Room in House(Except Kitc &amp; WC) --></label>
+        <name>Total_Room_in_House_Except_Kitc_WC__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10+</masterLabel>
+            <translation><!-- 10+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How many members reside at your home, including yourself? (Please include friends, room-mates who live with you full-time) --></help>
+        <label><!-- Total members living currently --></label>
+        <name>Total_members_living_currently__c</name>
+    </fields>
+    <fields>
+        <help><!-- In the above list of members, who is the respondent? --></help>
+        <label><!-- Who is Respondant --></label>
+        <name>Who_is_Respondant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Working Status for Member (Select the appropriate one) --></help>
+        <label><!-- Work status of member --></label>
+        <name>Work_status_of_member__c</name>
+        <picklistValues>
+            <masterLabel>Not Working</masterLabel>
+            <translation><!-- Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired</masterLabel>
+            <translation><!-- Retired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Studying in school / College Student &amp; Working full time</masterLabel>
+            <translation><!-- Studying in school / College Student &amp; Working full time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Studying in school / College Student &amp; Working part-time</masterLabel>
+            <translation><!-- Studying in school / College Student &amp; Working part-time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working full time</masterLabel>
+            <translation><!-- Working full time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working part-time</masterLabel>
+            <translation><!-- Working part-time --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What is your mother tongue? By mother tongue I mean the language your mother first spoke to you in when you were born. (Select the language one) --></help>
+        <label><!-- Your Native Language --></label>
+        <name>Your_Native_Language__c</name>
+    </fields>
+    <layouts>
+        <layout>Survey Member Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AsyncQueue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>AsyncQueue</value>
+    </caseValues>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>Class_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Collection Status --></label>
+        <name>Error_Collection_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsRetry --></label>
+        <name>IsRetry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Type --></label>
+        <name>Job_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job id --></label>
+        <name>Job_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note --></label>
+        <name>Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retry Count --></label>
+        <name>Retry_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Partial Soft Credit --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Partial Soft Credit --></value>
+    </caseValues>
+    <fields>
+        <help><!-- The amount to be soft credited. --></help>
+        <label>Bedrag</label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The contact&apos;s full name. --></help>
+        <label>Contactpersoon Naam</label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The OpportunityContactRole this soft credit applies to. --></help>
+        <label>Contactpersoon Rol ID</label>
+        <name>Contact_Role_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The contact who gets this soft credit. --></help>
+        <label>Contactpersoon</label>
+        <name>Contact__c</name>
+        <relationshipLabel>Gedeeltelijke Soft Credits</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Opportunity this soft credit applies to. --></help>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel>Gedeeltelijke Soft Credits</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Role of this soft credit. --></help>
+        <label>Rol Naam</label>
+        <name>Role_Name__c</name>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Partial Soft Credit Name --></nameFieldLabel>
+    <webLinks>
+        <label>Beheer Soft Credits</label>
+        <name>Manage_Soft_Credits</name>
+    </webLinks>
+</CustomObjectTranslation>

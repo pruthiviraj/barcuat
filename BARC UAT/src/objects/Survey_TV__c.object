@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Customer_VC_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer VC No</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Do_you_use_recording_feature__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Do you use the recording feature in the Set top box?</inlineHelpText>
+        <label>Do you use recording feature</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Dongle_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Dongle Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STB_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>STB ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STB_Make__c</fullName>
+        <externalId>false</externalId>
+        <label>STB Make</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HuaweiDS366</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cisco</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DEN</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SITI</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Survey__c</fullName>
+        <externalId>false</externalId>
+        <label>Survey</label>
+        <referenceTo>Survey__c</referenceTo>
+        <relationshipLabel>Survey TV</relationshipLabel>
+        <relationshipName>Survey_TV</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>TV_screen_size__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the TV screen Size? (Select the appropriate one</inlineHelpText>
+        <label>TV screen size</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>14 inches or less</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>15-20 inches</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>21-27 inches</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>28-32 inches</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>33-42 inches</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>43 inches or more</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>15-19 inches</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>43 inches or less</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TV_sets_located_at_your_home__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Where are each of these TV Sets located at your home? (Select the appropriate one)</inlineHelpText>
+        <label>TV sets located at your home</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hall/Drawing Room</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bedroom</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kitchen</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dining Room</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servent Room</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prayer Room</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Balcony</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Television_Screen_at_your_home__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the Television screens at your home? ? (Select the appropriate one)</inlineHelpText>
+        <label>Television Screen at your home</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CRT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LCD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Plasma</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HDTV</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Projection</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LED</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HDTV – 2K, 4K</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_of_TV__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What type of TV/TVs do you have at your home? (Select the appropriate one)</inlineHelpText>
+        <label>Type of TV</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Color TV</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Black &amp; White</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>USB_HUB_Installed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>USB HUB Installed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Survey TV</label>
+    <nameField>
+        <displayFormat>ST-{0}</displayFormat>
+        <label>Survey TV No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Survey TV</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

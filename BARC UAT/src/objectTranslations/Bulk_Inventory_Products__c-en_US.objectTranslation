@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bulk Inventory Products</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bulk Inventory Products</value>
+    </caseValues>
+    <fields>
+        <label><!-- Inventory --></label>
+        <name>Inventory__c</name>
+        <relationshipLabel><!-- Bulk Inventory Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Bulk Inventory Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Received Quantity --></label>
+        <name>Received_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Faulty Quantity --></label>
+        <name>Total_Faulty_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse --></label>
+        <name>Warehouse__c</name>
+        <relationshipLabel><!-- Bulk Inventory Products --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Faulty Quantity should not be greater then Received Quantity --></errorMessage>
+        <name>FaultyyQuantity</name>
+    </validationRules>
+</CustomObjectTranslation>

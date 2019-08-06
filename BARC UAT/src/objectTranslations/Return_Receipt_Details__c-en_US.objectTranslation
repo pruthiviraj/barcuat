@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Return Receipt Details</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Return Receipt Details</value>
+    </caseValues>
+    <fields>
+        <label><!-- GRN No --></label>
+        <name>GRN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Code --></label>
+        <name>Item_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item UOM --></label>
+        <name>Item_UOM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Return No --></label>
+        <name>Purchase_Return_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return Receipt --></label>
+        <name>Return_Receipt__c</name>
+        <relationshipLabel><!-- Return Receipt Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sr No --></label>
+        <name>Sr_No__c</name>
+    </fields>
+    <layouts>
+        <layout>Return Receipt Details Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

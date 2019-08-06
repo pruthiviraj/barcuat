@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Operator User</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Operator Users</value>
+    </caseValues>
+    <fields>
+        <label><!-- CAFID --></label>
+        <name>CAFID__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Operator --></label>
+        <name>Local_Operator__c</name>
+        <relationshipLabel><!-- Operator Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Operator --></label>
+        <name>Operator__c</name>
+        <relationshipLabel><!-- Operator Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pin Code --></label>
+        <name>Pin_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>CALL</masterLabel>
+            <translation><!-- CALL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TECH</masterLabel>
+            <translation><!-- TECH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technician Billing Address --></label>
+        <name>Technician_Billing_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technician City --></label>
+        <name>Technician_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technician Country --></label>
+        <name>Technician_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technician District --></label>
+        <name>Technician_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technician Email --></label>
+        <name>Technician_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technician Name --></label>
+        <name>Technician_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technician Phone --></label>
+        <name>Technician_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technician Pincode --></label>
+        <name>Technician_Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technician State --></label>
+        <name>Technician_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technician Town Name --></label>
+        <name>Technician_Town_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Town / Village Name --></label>
+        <name>Town_Village_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <layouts>
+        <layout>Operator Technician Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

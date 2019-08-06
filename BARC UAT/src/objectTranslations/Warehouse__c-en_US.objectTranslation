@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Warehouse</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Warehouse</value>
+    </caseValues>
+    <fields>
+        <label><!-- Parent Warehouse --></label>
+        <name>Parent_Warehouse__c</name>
+        <relationshipLabel><!-- Warehouse --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Billing Address --></label>
+        <name>Warehouse_Billing_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse City --></label>
+        <name>Warehouse_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Code --></label>
+        <name>Warehouse_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Country --></label>
+        <name>Warehouse_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Email --></label>
+        <name>Warehouse_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Phone --></label>
+        <name>Warehouse_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Pin Code --></label>
+        <name>Warehouse_Pin_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Shipping Address --></label>
+        <name>Warehouse_Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Shipping City --></label>
+        <name>Warehouse_Shipping_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Shipping Country --></label>
+        <name>Warehouse_Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Shipping Pin Code --></label>
+        <name>Warehouse_Shipping_Pin_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Shipping State --></label>
+        <name>Warehouse_Shipping_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse State --></label>
+        <name>Warehouse_State__c</name>
+    </fields>
+    <layouts>
+        <layout>Warehouse Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Warehouse Address Information --></label>
+            <section>Warehouse Address Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

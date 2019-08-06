@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Integration_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Integration URL</shortDescription>
+        <value>http://66.70.152.185:4300/api</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,504 @@
+<apex:page sidebar="false" standardStylesheets="false" showHeader="false" controller="Testing_Kitting">
+    <html ng-app="KittingApp">
+
+    <head>
+        <apex:slds />
+        <apex:stylesheet value="{!URLFOR($Resource.angular_bootstrap, 'css/bootstrap.css')}"
+        />
+        <apex:stylesheet value="{!URLFOR($Resource.toaster, 'toaster.min.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.angular_ui_select, 'select.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.helper_css)}" />
+        <style>
+            html {
+                font-size: unset !important;
+            }
+            
+            .slds-card {
+                background: #fff !important;
+            }
+            
+            .headerStyle{
+                background: aliceblue;
+                text-align: center;
+            }
+            
+            .no-border{
+                border: none !important;
+            }
+            
+            .add_btn {
+                margin: 10px !important;
+                margin-left: 30px !important;
+            }
+            
+            .sldspanel{
+                overflow-y: inherit !important;
+                
+            }
+        </style>
+        <apex:stylesheet value="{!URLFOR($Resource.ngSweetAlert, 'sweet-alert.css')}" />
+        
+    </head>
+    <apex:form id="form">
+    </apex:form>
+    <body ng-controller="MasterCtrl">
+        <toaster-container></toaster-container>
+        <div class="slds-scope">
+            <div class="slds-box headerStyle">
+                <div class="slds-text-title_caps">
+                    Testing + Kitting
+                </div>
+            </div>
+            
+            <div class="slds-box no-border">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-text-align_center">
+                        Select : {!invt.Product__r.Name}
+                    </div>
+                    <div class="slds-col ">
+                        <div class="slds-form-element">
+        					<div class="slds-form-elementontrol">
+        						<ui-select ng-model="selectedInv.selected" theme="bootstrap" ng-change="onSelectofInpl(selectedInv)">
+                                    <ui-select-match>{{$select.selected.Name}}</ui-select-match>
+                                    <ui-select-choices repeat="l in invLList | filter: $select.search">
+                                      <span ng-bind-html="l.Name | highlight: $select.search"></span>
+                                    </ui-select-choices>
+                              </ui-select>
+        					</div>
+    					</div>
+                    </div>
+                    <div class="slds-col slds-text-align_center">
+                        Select Kitting Type
+                    </div>
+                    <div class="slds-col">
+                        <div class="slds-form-element">
+        					<div class="slds-form-elementontrol">
+        						<ui-select ng-model="selectedKittingType.selected" theme="bootstrap">
+                                    <ui-select-match>{{$select.selected.label}}</ui-select-match>
+                                    <ui-select-choices repeat="l.label as l in kittingTypeList | filter: $select.search">
+                                      <span ng-bind-html="l.label | highlight: $select.search"></span>
+                                    </ui-select-choices>
+                              </ui-select>
+        					</div>
+    					</div>
+                    </div>
+                </div>
+                <br/>
+                <div class="slds-panel slds-size_medium slds-panel_docked slds-is-open" aria-hidden="false" id="chk" style="width:100%" ng-show="selectedInvData.Id != Null && selectedKittingType.selected != Null">
+                    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_col-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width:10%;">
+                                    <label class="slds-form-element__label"> PRODUCT</label>
+                                </th>
+                                <th scope="col" style="width:20%;">
+                                    <label class="slds-form-element__label"> Unique No</label>
+                                </th>
+                                <th scope="col" style="text-align:center">
+                                    <label class="slds-form-element__label"> Status</label>
+                                </th>
+                                <th scope="col" style="width:50%;">
+                                    <label class="slds-form-element__label">Remark</label>
+                                </th>
+                                <th scope="col" style="text-align:center">
+                                    <label class="slds-form-element__label">Action</label>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">
+                                    {!invt.Product__r.Name}
+                                </td>
+                                <td scope="row">
+                                    {{selectedInvData.Name}}
+                                </td>
+                                <td scope="row">
+                                    
+                                    <select class="slds-select" ng-model="selectedInvData.Status__c" ng-change="onStatusChange()">
+        								<option value="{{p.name}}" ng-repeat="p in statusPicklistData">{{p.name}}</option>
+        							</select>
+                                </td>
+                                <td scope="row">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <input type="text" id="text-input-id-1"  ng-model="selectedInvData.Remark__c" class="slds-input" ng-disabled="selectedInvData.Status__c != 'Faulty'"/>
+                                        </div>  
+                                    </div>
+                                </td>
+                                <td scope="row">
+                                    <!--ng-click="addToFaultyList('{!invt.Product__r.Name}',selectedInvData)"-->
+                                    <button class="slds-button slds-button_brand" ng-click="saveToFaulty(selectedInvData)"  ng-disabled="selectedInvData.Status__c != 'Faulty'">Add To Faulty</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br/>
+                <div class="slds-panel slds-size_medium slds-panel_docked slds-is-open sldspanel" aria-hidden="false" id="chk" style="width:100%" ng-show="selectedInvData.Status__c == 'Ok'">
+                    <div class="slds-text-title_caps">Select Inventory Product For Kitting &amp; Testing</div>
+                    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_col-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width:10%;">
+                                    <label class="slds-form-element__label">Select Product</label>
+                                </th>
+                                <th scope="col" style="width:20%;">
+                                    <label class="slds-form-element__label">Select Inventory Product No</label>
+                                </th>
+                                <th scope="col" style="text-align:center">
+                                    <label class="slds-form-element__label"> Status</label>
+                                </th>
+                                <th scope="col" style="width:50%;">
+                                    <label class="slds-form-element__label">Remark</label>
+                                </th>
+                                <th scope="col" style="text-align:center">
+                                    <label class="slds-form-element__label">Action</label>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">
+                                    <select class="slds-select" ng-model="selectedProduct" ng-change="onProductChange()">
+        								<option value="{{p}}" ng-repeat="p in productList">{{p.Product__r.Name}}</option>
+        							</select>
+                                </td>
+                                <td scope="row">
+                                    <ui-select ng-model="selectKittingModel.Id" theme="bootstrap" ng-change="onSelectofInpl(selectedInv)">
+                                        <ui-select-match>{{$select.selected.Name}}</ui-select-match>
+                                        <ui-select-choices repeat="l.Id as l in invProdListData | filter: $select.search">
+                                          <span ng-bind-html="l.Name | highlight: $select.search"></span>
+                                        </ui-select-choices>
+                                  </ui-select>
+               <!--                      <select class="slds-select" ng-model="selectKittingModel.Id">-->
+        							<!--	<option value="{{p.Id}}" ng-repeat="p in invProdListData">{{p.Name}}</option>-->
+        							<!--</select>-->
+                                </td>
+                                <td scope="row">
+                                    <select class="slds-select" ng-model="selectKittingModel.Status__c" ng-change="onStatusChange()">
+        								<option value="{{p.name}}" ng-repeat="p in statusPicklistData">{{p.name}}</option>
+        							</select>
+                                </td>
+                                <td scope="row">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <input type="text" id="text-input-id-1"  ng-model="selectKittingModel.Remark__c" class="slds-input" ng-disabled="selectKittingModel.Status__c != 'Faulty'"/>
+                                        </div>  
+                                    </div>
+                                </td>
+                                <td scope="row" style="text-align:center">
+                                    <button class="slds-button slds-button_brand" ng-click="addToList(selectedProduct,selectKittingModel)" ng-disabled="selectKittingModel.Status__c == ''">Add</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br/>
+                <div class="slds-panel slds-size_medium slds-panel_docked slds-is-open sldspanel" aria-hidden="false" id="chk" style="width:100%" ng-show="selectedInProdList.length > 0">
+                    <div class="slds-text-title_caps">Kitting Products</div>
+                    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_col-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width:10%;">
+                                    <label class="slds-form-element__label">Product</label>
+                                </th>
+                                <th scope="col" style="">
+                                    <label class="slds-form-element__label">Inventory Product No</label>
+                                </th>
+                                <th scope="col" style="width:20%;;text-align:center">
+                                    <label class="slds-form-element__label"> Status</label>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="invp in selectedInProdList">
+                                <td scope="row">
+                                    {{invp.pname}}
+                                </td>
+                                <td scope="row">
+                                     {{invp.Name}}
+                                </td>
+                                <td scope="row">
+                                    {{invp.Status__c}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                     <br/>
+                    <div class="slds-text-align_center">
+                        <button class="slds-button slds-button_brand" ng-click="createKitting()" >Create Kitting</button>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <apex:includeScript value="{!URLFOR($Resource.jquery_js)}" />
+        <apex:includeScript value="{!URLFOR($Resource.angular, 'angular.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.angular, 'angular-sanitize.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.moment)}" />
+        <apex:includeScript value="{!URLFOR($Resource.angular, 'angular-animate.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.toaster, 'toaster.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.underscore_js)}" />
+        <apex:includeScript value="{!URLFOR($Resource.angular_ui_select,'select.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.angular_bootstrap, 'ui-bootstrap-tpls-2.5.0.js')}"/>
+        
+        <apex:includeScript value="{!URLFOR($Resource.ngSweetAlert, 'sweet-alert.js')}"/>
+        
+        <apex:includeScript value="{!URLFOR($Resource.ngSweetAlert, 'SweetAlert.js')}"/>
+        
+        <script>
+            var App = angular.module('KittingApp', ['ui.bootstrap', 'toaster',
+                'ngAnimate', 'ui.select','oitozero.ngSweetAlert','ngSanitize'
+            ]);
+            App.controller('MasterCtrl', function($scope, toaster,SweetAlert) {
+                $scope.invLList = '{!invLList}';
+                $scope.invLList = JSON.parse($scope.invLList);
+                
+                $scope.productList = '{!productList}';
+                $scope.productList = JSON.parse($scope.productList);
+                
+                $scope.kittingTypeList = '{!kittingTypeList}';
+                $scope.kittingTypeList = JSON.parse($scope.kittingTypeList);
+                
+                console.log('$scope.kittingTypeList =======',$scope.kittingTypeList);
+                
+                
+                
+                $scope.selectedInv = {};
+                $scope.selectedInvData = {};
+                $scope.selectedKittingType = {};
+                $scope.faultyInvList = [];
+                $scope.selectedInProdList = [];
+                
+                // Picklist Data
+                $scope.statusPicklistData = [
+                    {name: "Ok"},
+                    {name: "Faulty"}
+                    //{name: "Retest"}
+                ]
+                
+                $scope.selectedProduct = '';
+                $scope.invProdListData = [];
+                $scope.selectKittingModel = {
+                    Id: '',
+                    Status__c: '',
+                    Remark__c: ''
+                    
+                }
+                
+                
+                $scope.safeApply = function(fn) {
+                    var phase = this.$root.$$phase;
+                    if (phase == '$apply' || phase ==
+                        '$digest') {
+                        if (fn && (typeof(fn) ===
+                                'function')) {
+                            fn();
+                        }
+                    } else {
+                        this.$apply(fn);
+                    }
+                };
+                
+                $scope.onSelectofInpl = function(){
+                    $scope.safeApply(function() {
+                        $scope.selectedInvData =$scope.selectedInv.selected;
+                        
+                        console.log('$scope.selectedInv.selected ====',$scope.selectedInv.selected);
+                    })
+                }
+                
+                $scope.onStatusChange = function(){
+                    if($scope.selectedInvData.Status__c != 'Faulty'){
+                        $scope.selectedInvData.Remark__c = '';
+                    }
+                }
+                
+                
+                
+                $scope.onProductChange = function(){
+                    console.log('$scope.selectedProduct ====='+$scope.selectedProduct);
+                    $scope.invProdListData = [];
+                    Visualforce.remoting.Manager.invokeAction(
+                    '{!$RemoteAction.Testing_Kitting.getInvProducts}',
+                    JSON.parse($scope.selectedProduct).Product__c, 
+                    function(result, event){
+                        console.log('result =====',result);
+                        $scope.safeApply(function() {
+                            $scope.invProdListData = result;
+                        })
+                    }, 
+                    {escape: true});
+                }
+                
+                $scope.resetSelectKittingModel = function(){
+                    $scope.selectedProduct = '';
+                    $scope.invProdListData = [];
+                    $scope.selectKittingModel = {
+                        Id: '',
+                        Status__c: '',
+                        Remark__c: ''
+                        
+                    }
+                }
+                
+                
+                $scope.addToList = function(pname,data){
+                    console.log('pname =====',pname);
+                    console.log('data ======',data);
+                    
+                    var index =  _.findLastIndex($scope.invProdListData, {
+                      Id: data.Id
+                    });
+                    var d = $scope.invProdListData[index];
+                    
+                    if(data.Status__c == 'Ok'){
+                        $scope.selectedInProdList.push({
+                            Id: data.Id,
+                            pname: JSON.parse(pname).Product__r.Name,
+                            Name: d.Name,
+                            Status__c: 'Ok'
+                        });
+                        
+                        $scope.resetSelectKittingModel();
+                        
+                    }else{
+                        if(data.Status__c == 'Faulty' && ( data.Remark__c == '' || data.Remark__c == null)){
+                            toaster.pop('error', 'Error', 'Please fill remarks');
+                           
+                        }else{
+                            var fldata = {
+                                Id: data.Id,
+                                Remark__c: data.Remark__c,
+                                Status__c: 'Faulty'
+                            }
+                            
+                            // Visualforce.remoting.Manager.invokeAction(
+                            // '{!$RemoteAction.Testing_Kitting.saveInvProductsAsFaulty}',
+                            // JSON.stringify(fldata), 
+                            // function(result, event){
+                            //     console.log('result =====',result);
+                            //     $scope.safeApply(function() {
+                            //         if(result == true){
+                            //             toaster.pop('success', 'Success', 'Product  added as Faulty.');
+                            //             var index =  _.findLastIndex($scope.invLList, {
+                            //               Id: data.Id
+                            //             });
+                                        
+                                        
+                            //             $scope.resetSelectKittingModel();
+                            //         }else{
+                            //             toaster.pop('error', 'Error', 'Product not added as Faulty. Please contact admin.');
+                            //         }
+                            //     });
+                            // }, 
+                            // {escape: true});
+                            console.log('fldata ======'+fldata);
+                        }
+                    }
+                    
+                }
+                
+                
+                $scope.saveToFaulty = function(data){
+                    if(data.Status__c == 'Faulty' && ( data.Remark__c == '' || data.Remark__c == null)){
+                        toaster.pop('error', 'Error', 'Please fill remarks');
+                        
+                    }else{
+                        var fldata = {
+                            Id: data.Id,
+                            Remark__c: data.Remark__c,
+                            Status__c: 'Faulty'
+                        }
+                        
+                        Visualforce.remoting.Manager.invokeAction(
+                        '{!$RemoteAction.Testing_Kitting.saveInvProductsAsFaulty}',
+                        JSON.stringify(fldata), 
+                        function(result, event){
+                            console.log('result =====',result);
+                            $scope.safeApply(function() {
+                                if(result == true){
+                                    toaster.pop('success', 'Success', 'Product  added as Faulty.');
+                                    var index =  _.findLastIndex($scope.invLList, {
+                                      Id: data.Id
+                                    });
+                                    
+                                    console.log('index ====='+index);
+                                    $scope.selectedInvData = {};
+                                    $scope.invLList.splice(index, 1);
+                                }else{
+                                    toaster.pop('error', 'Error', 'Product not added as Faulty. Please contact admin.');
+                                }
+                            });
+                        }, 
+                        {escape: true});
+                    }
+                }
+                
+                $scope.createKitting = function(){
+                    console.log('create kitting');
+                    
+                    var data = [];
+                    for(var i=0;i< $scope.selectedInProdList.length;i++){
+                        var d = {
+                            Id: $scope.selectedInProdList[i].Id,
+                            Status__c: 'Ok'
+                        }
+                        data.push(d);
+                    }
+                    
+                    data.push({
+                        Id: $scope.selectedInvData.Id,
+                        Status__c: 'Ok'
+                    })
+                    
+                    console.log('data ======',data);
+                    
+                    console.log('$scope.selectedKittingType.selected ====',$scope.selectedKittingType.selected);
+                    $scope.kittingType = angular.copy($scope.selectedKittingType.selected);
+                    // $scope.kittingType = JSON.parse($scope.kittingType).label;
+                    
+                    
+                    
+                    Visualforce.remoting.Manager.invokeAction(
+                    '{!$RemoteAction.Testing_Kitting.createKitting}',
+                    JSON.stringify(data), $scope.kittingType,
+                    function(result, event){
+                        console.log('result =====',result);
+                        $scope.safeApply(function() {
+                            if(result != "Error"){
+                                SweetAlert.swal({   
+                        			title: "Kitting created in the systerm",   
+                        			text: "Please use the genrated no on Kitting -" + result,   
+                        			type: "success"
+                        		},  function(){  
+                        			alert("call this function");
+                        			var index =  _.findLastIndex($scope.invLList, {
+                                      Id: $scope.selectedInvData.Id
+                                    });
+                                    
+                        			$scope.selectedInvData = {};
+                                    $scope.invLList.splice(index, 1);
+                                    
+                                    $scope.resetSelectKittingModel();
+                        		});
+                            }else{
+                                toaster.pop('error', 'Error', 'Kitting not created. Please contact admin.');
+                            }
+                        });
+                    }, 
+                    {escape: true});
+                    
+                    
+                    
+                }
+            })
+
+        </script>
+    </body>
+    
+    </html>
+
+</apex:page>

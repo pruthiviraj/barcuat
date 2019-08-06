@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey TV</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Survey TV</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer VC No --></label>
+        <name>Customer_VC_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do you use the recording feature in the Set top box? --></help>
+        <label><!-- Do you use recording feature --></label>
+        <name>Do_you_use_recording_feature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dongle Number --></label>
+        <name>Dongle_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- STB ID --></label>
+        <name>STB_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- STB Make --></label>
+        <name>STB_Make__c</name>
+        <picklistValues>
+            <masterLabel>Cisco</masterLabel>
+            <translation><!-- Cisco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEN</masterLabel>
+            <translation><!-- DEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HuaweiDS366</masterLabel>
+            <translation><!-- HuaweiDS366 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SITI</masterLabel>
+            <translation><!-- SITI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Survey --></label>
+        <name>Survey__c</name>
+        <relationshipLabel><!-- Survey TV --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- What is the TV screen Size? (Select the appropriate one --></help>
+        <label><!-- TV screen size --></label>
+        <name>TV_screen_size__c</name>
+        <picklistValues>
+            <masterLabel>14 inches or less</masterLabel>
+            <translation><!-- 14 inches or less --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15-20 inches</masterLabel>
+            <translation><!-- 15-20 inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21-27 inches</masterLabel>
+            <translation><!-- 21-27 inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>28-32 inches</masterLabel>
+            <translation><!-- 28-32 inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>33-42 inches</masterLabel>
+            <translation><!-- 33-42 inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>43 inches or more</masterLabel>
+            <translation><!-- 43 inches or more --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Where are each of these TV Sets located at your home? (Select the appropriate one) --></help>
+        <label><!-- TV sets located at your home --></label>
+        <name>TV_sets_located_at_your_home__c</name>
+        <picklistValues>
+            <masterLabel>Balcony</masterLabel>
+            <translation><!-- Balcony --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bedroom</masterLabel>
+            <translation><!-- Bedroom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dining Room</masterLabel>
+            <translation><!-- Dining Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hall/Drawing Room</masterLabel>
+            <translation><!-- Hall/Drawing Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kitchen</masterLabel>
+            <translation><!-- Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prayer Room</masterLabel>
+            <translation><!-- Prayer Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Servent Room</masterLabel>
+            <translation><!-- Servent Room --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What is the Television screens at your home? ? (Select the appropriate one) --></help>
+        <label><!-- Television Screen at your home --></label>
+        <name>Television_Screen_at_your_home__c</name>
+        <picklistValues>
+            <masterLabel>CRT</masterLabel>
+            <translation><!-- CRT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HDTV</masterLabel>
+            <translation><!-- HDTV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LCD</masterLabel>
+            <translation><!-- LCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LED</masterLabel>
+            <translation><!-- LED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plasma</masterLabel>
+            <translation><!-- Plasma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projection</masterLabel>
+            <translation><!-- Projection --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What type of TV/TVs do you have at your home? (Select the appropriate one) --></help>
+        <label><!-- Type of TV --></label>
+        <name>Type_of_TV__c</name>
+        <picklistValues>
+            <masterLabel>Black &amp; White</masterLabel>
+            <translation><!-- Black &amp; White --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color TV</masterLabel>
+            <translation><!-- Color TV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- USB HUB Installed --></label>
+        <name>USB_HUB_Installed__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

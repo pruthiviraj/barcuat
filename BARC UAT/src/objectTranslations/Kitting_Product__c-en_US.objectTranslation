@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Kitting Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Kitting Products</value>
+    </caseValues>
+    <fields>
+        <label><!-- Inventory Product --></label>
+        <name>Inventory_Product__c</name>
+        <relationshipLabel><!-- Kitting Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Kitting --></label>
+        <name>Kitting__c</name>
+        <relationshipLabel><!-- Kitting Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Kitting Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Supplier --></label>
+        <name>Supplier__c</name>
+        <relationshipLabel><!-- Kitting Products --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Kitting Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

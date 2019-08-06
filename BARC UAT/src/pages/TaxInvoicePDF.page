@@ -1,0 +1,211 @@
+<apex:page renderAs="pdf" controller="TaxInvoicePDFCls">
+    <apex:form >
+        <html>
+            <head>
+                 <apex:stylesheet value="{!$Resource.BarcStaticResource}"></apex:stylesheet>
+            </head>
+            <body class="pdf" style="font-family: Verdana, Geneva, sans-serif;">
+                <div class="default">
+                <table width="100%" style="border: 1px solid black;">
+                    <tr>
+                        <td style="width:33.33%;margin-top:15px;padding:30px 30px"></td>
+                        <td style="width:33.33%;margin-top:15px;">
+                            <p class="bold" style="margin-top:15px;">Meterology Data Private Limited</p>
+                        </td>
+                        <td style="width:33.33%"><p class="bold text-center" style="margin-top:15px">Original for Recipient</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="default">
+                <table class="piTable">
+                    <tr>
+                        <th colspan="2" style="text-align:center;margin-top:5px"><h4>Tax Invoice</h4></th>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p class="bold">Invoice No:</p></td>
+                        <td><p>{!inv.Name}</p></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p class="bold">Date &amp; Time:</p></td>
+                        <td><p>{!inv.Invoice_Date_Time__c}</p></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p class="bold">Transporter Name:</p></td>
+                        <td><p>{!inv.Transporter_Name__c}</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="default">
+                <table class="piTable">
+                    <tr>
+                        <td style="width:25%"><p class="bold">Delivery Mode:</p></td>
+                        <td style="width:25%"><p>{!inv.Delivery_Mode__c}</p></td>
+                        <td style="width:25%"><p class="bold">Shipment (Weight Kgs):</p></td>
+                        <td style="width:25%"><p>{!inv.Shipment_Weight__c}</p></td>
+                    </tr>
+                    <tr>
+                        <td style="width:25%"><p class="bold">Number of Boxes:</p></td>
+                        <td style="width:25%"><p>{!inv.Number_of_Boxes__c}</p></td>
+                        <td style="width:25%"><p class="bold">Docket Number:</p></td>
+                        <td style="width:25%"><p>{!inv.Docket_Number__c}</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="default">
+                <table class="piTable">
+                    <tr>
+                        <th style="width:50%"><p class="text-center">Consignor</p></th>
+                        <th style="width:50%"><p class="text-center">Consignee</p></th>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p><span class="bold">Name:</span>Meterology Data Pvt Ltd</p></td>
+                        <td style="width:50%"><p><span class="bold">Name:</span>Meterology Data Pvt Ltd</p></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p><span class="bold">Address:</span>C/o Market xcel data matrix pvt Ltd
+                                                    #01, Aishweraya Complex, 2nd Floor, West
+                                                    Road, West C.I.T. Nagar, Chennai -600 035 Ph:
+                                                    044-42123916 Land mark: Punjab National
+                                                    Bank Building.
+                                                    Chennai
+                                                    Tamil Nadu
+                            </p>
+                            <p><span class="bold">Email:</span>MXK99991@market-xcel.com</p>
+                            <p><span class="bold">Phone:</span>8344962016</p>
+                        </td>
+                        <td style="width:50%">
+                            <p><span class="bold">Address:</span> C/O-DTDC SUPPL CHAIN
+                                                    SOLUTIONS LTD,Gala No.6,7,8,10,11, Ground
+                                                    Floor, B- Shiv Shakti Industrial estate Plot No-7
+                                                    Sitaram mill Compound ,J.R Boricha Marg,
+                                                    Lower Parel (E), Mumbai-400011
+                                                    Mumbai
+                                                    Maharashtra
+                            </p>
+                            <p><span class="bold">Email:</span>mumb.shaileshk@mdlindia.co.in</p>
+                            <p><span class="bold">Phone:</span>9029200000</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%"><p><span class="bold">GSTIN:</span>33AAKCM2754L1Z7</p></td>
+                        <td style="width:50%"><p><span class="bold">GSTIN:</span>27AAKCM2754L1Z0</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="default">
+                <table class="piTable">
+                     <tr>
+                        <td style="width:25%"><p><span class="bold">State:</span> Tamil Nadu </p></td>
+                        <td style="width:25%"><p><span class="bold">Code:</span>  TN </p></td>
+                        <td style="width:25%"><p><span class="bold">State:</span> Maharashtra </p></td>
+                        <td style="width:25%"><p><span class="bold">State:</span> MH </p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><p></p></td>
+                        <td colspan="2"><p><span class="bold">Place of Supply:</span> Maharashtra </p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="default">
+                <table class="piTable">
+                    <tr>
+                        <th colspan="4" rowspan="0" width="20%"><p class="text-center">S.No.</p></th>
+                        <th rowspan="0" width="20%"><p class="text-center">Product Description</p></th>
+                        <!--<th rowspan="2" style="width:10%"><p class="text-center">HSN Code</p></th>-->
+                        <th rowspan="0" width="10%"><p class="text-center">Qty</p></th>
+                        <th rowspan="0" width="25%"><p class="text-center">Taxable Value</p></th>
+                        <!--<th colspan="2" style="width:20%"><p class="text-center">IGST</p></th>-->
+                        <th rowspan="0" width="25%"><p class="text-center">Total</p></th>
+                        
+                    </tr>
+                    <!--<tr>-->
+                    <!--    <td><p class="text-center">Rate (%)</p></td>-->
+                    <!--    <td><p class="text-center">Amount</p></td>-->
+                    <!--</tr>-->
+                    <apex:variable value="{!1}" var="cnt"/>
+                    <apex:repeat value="{!invline}" var="inl">
+                    <tr>
+                        <td colspan="4" ><p class="text-center">{!cnt}</p></td>
+                        <td><p class="text-center">{!inl.Kitting__r.Name}</p></td>
+                        <!--<td style="width:10%"><p class="text-center">{!inl}</p></td>-->
+                        <td><p class="text-center">1</p></td>
+                        <td><p class="text-center">{!inl.Kitting_Amount__c}</p></td>
+                        <!--<td style="width:10%"><p class="text-center">{!inl}</p></td>-->
+                        <td><p class="text-center">{!inl.Total_Amount__c}</p></td>
+                        <!--<td style="width:15%"><p class="text-center">{!inl}</p></td>-->
+                    </tr>
+                    <apex:variable value="{!cnt + 1}" var="cnt"/>
+                    </apex:repeat>
+                    <tr>
+                        <td colspan="8"><p class="bold" style="margin-left:60px">As per detailed Annexure</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><p class="bold text-center">Total</p></td>
+                        <td><p class="text-center">20</p></td>
+                        <td><p class="text-center">204,000.58</p></td>
+                        <td><p class="text-center">18.0</p></td>
+                        <td><p class="text-center">36,720.10</p></td>
+                        <td><p class="text-center">240,720.68</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><p class="bold text-center">Purpose</p></td>
+                        <td colspan="2"><p class="bold text-center">Total Tax (IGST)</p></td>
+                        <td><p class="text-center">240,720.68</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><p class="bold text-center">Transportation of goods</p></td>
+                        <td colspan="3"><p class="bold text-center">Ceritified that the particulars given above are true and correct</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <p class="bold">Declaration:</p>
+                            <p style="margin-top:5px;margin-left:10px">1. Meterology Data Private Limited is engaged in the provision of services and registered for GST purposes.</p>
+                        </td>
+                        <td colspan="4"><p class="bold text-center">For Meterology Data Private Limited</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="8"><p class="bold" style="text-align:right;margin-right:50px">Authorised Signatory</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="default" style="page-break-before: always;">
+                <table width="100%" style="border: 1px solid black;">
+                    <tr>
+                        <td style="width:33.33%;margin-top:15px;padding:30px 30px"></td>
+                        <td style="width:33.33%;margin-top:15px;">
+                            <p class="bold" style="margin-top:15px;">Meterology Data Private Limited</p>
+                        </td>
+                        <td style="width:33.33%"><p class="bold text-center" style="margin-top:15px">Original for Recipient</p></td>
+                    </tr>
+                </table>
+                <div class="default" style="margin-top:2px">
+                    <table width="100%" class="piTable">
+                        <tr>
+                            <td  colspan="4"><p class="bold text-center">Annexure to TI-TN-1819-00027</p></td>
+                        </tr>
+                        <tr>
+                            <th style="width:20%"><p class="text-center">S. No.</p></th>
+                            <th style="width:40%"><p class="text-center">Particulars</p></th>
+                            <th style="width:20%"><p class="text-center">Knet</p></th>
+                            <th style="width:20%"><p class="text-center">Amount</p></th>
+                        </tr>
+                        <tr>
+                            <td style="width:20%"><p class="text-center">1</p></td>
+                            <td style="width:40%"><p class="text-center">BAR-O-Meter</p></td>
+                            <td style="width:20%"><p class="text-center">00101146</p></td>
+                            <td style="width:20%"><p class="text-center">10,838.83</p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><p class="bold text-center">Total Value</p></td>
+                            <td><p class="text-center">10,838.83</p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            </body>
+        </html>
+    </apex:form>
+</apex:page>

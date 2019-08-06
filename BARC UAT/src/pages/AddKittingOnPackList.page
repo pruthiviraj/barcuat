@@ -1,0 +1,94 @@
+<apex:page sidebar="false" showHeader="false" applyHtmlTag="false" controller="AddKittingOnPackListCls">
+
+<apex:form id="form">
+<head>
+    <apex:inputHidden value="{!selectId}" id="chkIn" />
+    <apex:inputHidden value="{!delId}" id="deIn" />
+    <apex:actionFunction name="addFunction" action="{!add}" rerender="form" />
+    <apex:actionFunction name="remFunction" action="{!rem}" rerender="form" />
+    <apex:slds />
+    
+</head>
+<body>
+    <div class="slds-scope">
+    <div class="slds-text-title_caps" style="text-align:center;font-size:20px">Add Packing List Item</div>
+    <br/>
+        <table id="tab1" class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Select</th>
+                    <th scope="col">Kitting Code</th>
+                    <!--<th scope="col">Kitting Name</th>-->
+                    <!--<th scope="col">Supplier</th>-->
+                </tr>
+            </thead>
+            <tbody>
+                <apex:repeat value="{!klist}" var="k">
+                    <tr>
+                        <td><input type="checkbox" onchange="add('{!k.id}')"/></td>
+                        <td>{!k.Name}</td>
+                        <!--<td>{!k.Kitting_Name__c}</td>-->
+                        <!--<td>{!k.Supplier__c}</td>-->
+                    </tr>
+                </apex:repeat>
+            </tbody>
+        </table>
+    </div>
+       <br/>
+    <div class="slds-scope">
+        <div class="slds-text-title_caps" style="text-align:center;font-size:20px">Selected Packing List Item</div>
+        <br/>
+        <table id="tab2" class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+            <thead>
+                <tr>
+                    <th scope="col" style="width:10%">Select</th>
+                    <th scope="col" style="width:90%">Kitting Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <apex:variable value="{!0}" var="rowNum" />
+                <apex:repeat value="{!pkline}" var="p">
+                    <tr>
+                        <td><input type="checkbox" onchange="rem('{!rowNum}')" checked="checked"/></td>
+                        <td><apex:outputField value="{!p.Kitting__c}" /></td>
+                 <apex:variable var="rowNum" value="{!rowNum + 1}" />
+                    </tr>
+                </apex:repeat>
+            </tbody>
+        </table>
+    </div>
+    <br/>
+    <div class="slds-scope" align="center">
+        <apex:commandButton action="{!Save}" value="Save" styleClass="slds-button slds-button_brand"/>
+        <apex:commandButton action="{!cancel}" value="Cancel" styleClass="slds-button slds-button_destructive"/>
+    </div>
+    <br/>
+    
+    <apex:stylesheet value="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+    <apex:includeScript value="https://code.jquery.com/jquery-3.3.1.js" />
+    <apex:includeScript value="https://cdn.datatables.net/1.10.0/js/jquery.dataTables.js"/>
+
+    <script>
+        $(document).ready(function() {
+            $('#tab1').DataTable({
+                "ordering": false,
+            });
+        })
+
+        function add(id) {
+            // alert(id);
+            $('[id$=chkIn]').val(id);
+            addFunction();
+        }
+        
+        function rem(id) {
+            // alert(id);
+            $('[id$=deIn]').val(id);
+            remFunction();
+        }
+
+    </script>
+</body>
+</apex:form>
+
+</apex:page>

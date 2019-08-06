@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Supplier</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Supplier</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Holder Name --></label>
+        <name>Account_Holder_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address (Bank) --></label>
+        <name>Address_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Number --></label>
+        <name>Bank_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Details --></label>
+        <name>Bank_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Name --></label>
+        <name>Bank_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- GST Date --></label>
+        <name>GST_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- GST Number --></label>
+        <name>GST_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFSC Code --></label>
+        <name>IFSC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nature of Bussiness --></label>
+        <name>Nature_of_Bussiness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nature of Company --></label>
+        <name>Nature_of_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAN Number --></label>
+        <name>PAN_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment terms --></label>
+        <name>Payment_terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pincode --></label>
+        <name>Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Code --></label>
+        <name>Vendor_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>Supplier Layout</layout>
+        <sections>
+            <label><!-- Bank Information --></label>
+            <section>Bank Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

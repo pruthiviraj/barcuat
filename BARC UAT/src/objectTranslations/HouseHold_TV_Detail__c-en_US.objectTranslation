@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HouseHold TV Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HouseHold TV Details</value>
+    </caseValues>
+    <fields>
+        <label><!-- Availability of Remote --></label>
+        <name>Availability_of_Remote__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer VC No --></label>
+        <name>Customer_VC_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- DTH Services --></label>
+        <name>DTH_Services__c</name>
+        <picklistValues>
+            <masterLabel>Airtel</masterLabel>
+            <translation><!-- Airtel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DD Direct</masterLabel>
+            <translation><!-- DD Direct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dish TV</masterLabel>
+            <translation><!-- Dish TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reliance Big TV</masterLabel>
+            <translation><!-- Reliance Big TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sun Direct</masterLabel>
+            <translation><!-- Sun Direct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tata Sky</masterLabel>
+            <translation><!-- Tata Sky --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Videocon</masterLabel>
+            <translation><!-- Videocon --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Do you use recording feature --></label>
+        <name>Do_you_use_recording_feature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dongle Number --></label>
+        <name>Dongle_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flat Screen --></label>
+        <name>Flat_Screen__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HD Enabled TV --></label>
+        <name>HD_Enabled_TV__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HD Subscription --></label>
+        <name>HD_Subscription__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HouseHold --></label>
+        <name>HouseHold__c</name>
+        <relationshipLabel><!-- HouseHold TV Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Kitting --></label>
+        <name>Kitting__c</name>
+        <relationshipLabel><!-- HouseHold TV Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Presence of DVR/PVR --></label>
+        <name>Presence_of_DVR_PVR__c</name>
+    </fields>
+    <fields>
+        <label><!-- STB ID --></label>
+        <name>STB_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- STB Make --></label>
+        <name>STB_Make__c</name>
+        <picklistValues>
+            <masterLabel>Cisco</masterLabel>
+            <translation><!-- Cisco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEN</masterLabel>
+            <translation><!-- DEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HuaweiDS366</masterLabel>
+            <translation><!-- HuaweiDS366 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SITI</masterLabel>
+            <translation><!-- SITI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Serial Number --></label>
+        <name>Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size of Screen (in Inches) --></label>
+        <name>Size_of_Screen_in_Inches__c</name>
+        <picklistValues>
+            <masterLabel>14 inches or less</masterLabel>
+            <translation><!-- 14 inches or less --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15-20 inches</masterLabel>
+            <translation><!-- 15-20 inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21-27 Inches</masterLabel>
+            <translation><!-- 21-27 Inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>28-32 Inches</masterLabel>
+            <translation><!-- 28-32 Inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>33-42 Inches</masterLabel>
+            <translation><!-- 33-42 Inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>43 inches or more</masterLabel>
+            <translation><!-- 43 inches or more --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- T7_2 --></label>
+        <name>T7_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- T7_4 --></label>
+        <name>T7_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- T7_6 --></label>
+        <name>T7_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- T7_9 --></label>
+        <name>T7_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- TV Signal Reception --></label>
+        <name>TV_Signal_Reception__c</name>
+        <picklistValues>
+            <masterLabel>Aerial / Normal Antenna</masterLabel>
+            <translation><!-- Aerial / Normal Antenna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cable Operator with Set Top Box</masterLabel>
+            <translation><!-- Cable Operator with Set Top Box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cable Operator without Set Top Box</masterLabel>
+            <translation><!-- Cable Operator without Set Top Box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DTH</masterLabel>
+            <translation><!-- DTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPTV</masterLabel>
+            <translation><!-- IPTV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TV sets located at your home --></label>
+        <name>TV_sets_located_at_your_home__c</name>
+        <picklistValues>
+            <masterLabel>Balcony</masterLabel>
+            <translation><!-- Balcony --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bedroom</masterLabel>
+            <translation><!-- Bedroom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dining Room</masterLabel>
+            <translation><!-- Dining Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hall/Drawing Room</masterLabel>
+            <translation><!-- Hall/Drawing Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kitchen</masterLabel>
+            <translation><!-- Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prayer Room</masterLabel>
+            <translation><!-- Prayer Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Servent Room</masterLabel>
+            <translation><!-- Servent Room --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of TV Screen --></label>
+        <name>Type_of_TV_Screen__c</name>
+        <picklistValues>
+            <masterLabel>CRT</masterLabel>
+            <translation><!-- CRT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HDTV</masterLabel>
+            <translation><!-- HDTV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LCD</masterLabel>
+            <translation><!-- LCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LED</masterLabel>
+            <translation><!-- LED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plasma</masterLabel>
+            <translation><!-- Plasma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projection TV</masterLabel>
+            <translation><!-- Projection TV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Television --></label>
+        <name>Type_of_Television__c</name>
+        <picklistValues>
+            <masterLabel>Black &amp; White</masterLabel>
+            <translation><!-- Black &amp; White --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color TV</masterLabel>
+            <translation><!-- Color TV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- USB HUB Installed --></label>
+        <name>USB_HUB_Installed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Since Acquired --></label>
+        <name>Year_Since_Acquired__c</name>
+    </fields>
+    <layouts>
+        <layout>HouseHold TV Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

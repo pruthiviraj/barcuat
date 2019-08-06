@@ -1,0 +1,63 @@
+<apex:page sidebar="true" lightningStyleSheets="true" docType="html-5.0" controller="CAFConfiguration">
+    <html>
+        <head>
+            <apex:slds />
+            <style>
+                .left-large{
+                    margin-left: 20px !important;
+                }
+                .float-left{
+                    float: left;
+                }
+            </style>
+        </head>
+        <!--<apex:form>-->
+            <body>
+                <div class="slds-scope">
+                    <div class="slds-box" style="width:100%">
+                        <div class="slds-text-title_caps">CAF Configuration</div>
+                        <div class="slds-grid slds-m-top_large">
+                            <apex:form >
+                                <div class="slds-form-element">
+                                    <label class="slds-form-element__label" for="text-input-id-1">Enter a Sampling No.</label>
+                                    <div class="slds-form-element__control">
+                                        <apex:inputText styleClass="slds-input" value="{!samplingNo}" required="true"/>
+                                    </div>
+                                </div>
+                                <apex:commandButton styleClass="slds-button slds-button_brand slds-m-top_large" value="Generate Cluster" action="{!generateCluster}"></apex:commandButton>
+                                
+                            </apex:form>
+                        </div>
+                        <!--<div class="slds-grid slds-m-top_large">-->
+                        <!--    <apex:form >-->
+                        <!--        <apex:commandButton styleClass="slds-button slds-button_brand" value="Assign Cluster To Operators"></apex:commandButton>-->
+                        <!--    </apex:form>-->
+                        <!--</div>-->
+                        <div class="slds-grid slds-m-top_large">
+                            <apex:form >
+                                 <div class="slds-form-element">
+                                    <label class="slds-form-element__label" for="text-input-id-1">Enter a Sampling No.</label>
+                                    <div class="slds-form-element__control">
+                                        <apex:inputText styleClass="slds-input" value="{!samplingNo}" required="true"/>
+                                    </div>
+                                </div>
+                                <apex:commandButton styleClass="slds-button slds-button_brand slds-m-top_large" value="Generators Cases For Operators" action="{!generateClusterCase}"></apex:commandButton>
+                            </apex:form>
+                        </div>
+                        <div class="slds-grid slds-m-top_large">
+                            <apex:form >
+                                 <div class="slds-form-element">
+                                    <label class="slds-form-element__label" for="text-input-id-1">Enter a Sampling No.</label>
+                                    <div class="slds-form-element__control">
+                                        <apex:inputText styleClass="slds-input" value="{!samplingNo}" required="true"/>
+                                    </div>
+                                </div>
+                                <apex:commandButton styleClass="slds-button slds-button_brand slds-m-top_large" value="Push Survey to App" action="{!pushSurveyApp}"></apex:commandButton>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </body>
+        <!--</apex:form>-->
+    </html>
+</apex:page>

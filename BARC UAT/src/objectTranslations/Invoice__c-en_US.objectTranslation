@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invoice</value>
+    </caseValues>
+    <fields>
+        <label><!-- Bill To Address --></label>
+        <name>Bill_To_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To City --></label>
+        <name>Bill_To_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Country --></label>
+        <name>Bill_To_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Email --></label>
+        <name>Bill_To_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Name --></label>
+        <name>Bill_To_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Phone --></label>
+        <name>Bill_To_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Pincode --></label>
+        <name>Bill_To_Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To State --></label>
+        <name>Bill_To_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declaration --></label>
+        <name>Declaration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Mode --></label>
+        <name>Delivery_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Docket Number --></label>
+        <name>Docket_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date / Time --></label>
+        <name>Invoice_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Boxes --></label>
+        <name>Number_of_Boxes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing List --></label>
+        <name>Packing_List__c</name>
+        <relationshipLabel><!-- Invoice --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To Address --></label>
+        <name>Ship_To_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To City --></label>
+        <name>Ship_To_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Country --></label>
+        <name>Ship_To_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Email --></label>
+        <name>Ship_To_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Name --></label>
+        <name>Ship_To_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Phone --></label>
+        <name>Ship_To_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Pincode --></label>
+        <name>Ship_To_Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To State --></label>
+        <name>Ship_To_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipment (Weight ) --></label>
+        <name>Shipment_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transporter Name --></label>
+        <name>Transporter_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>Invoice Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Information --></label>
+            <section>Shipping Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- View_PDF --></label>
+        <name>View_PDF</name>
+    </webLinks>
+</CustomObjectTranslation>

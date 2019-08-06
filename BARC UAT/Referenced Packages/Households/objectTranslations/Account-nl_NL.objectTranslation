@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Gemiddelde Gift</label>
+        <name>AverageAmount__c</name>
+    </fields>
+    <fields>
+        <label>Beste Gift Jaar Totaal</label>
+        <name>Best_Gift_Year_Total__c</name>
+    </fields>
+    <fields>
+        <label>Beste Gift Jaar</label>
+        <name>Best_Gift_Year__c</name>
+    </fields>
+    <fields>
+        <label>Eerste Gift Datum</label>
+        <name>FirstCloseDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Household Accounts, uses fields of non-excluded, ordered related Contacts. Generated automatically. --></help>
+        <label>Formele Begroeting</label>
+        <name>Formal_Greeting__c</name>
+    </fields>
+    <fields>
+        <label>Telefoon Huishouden</label>
+        <name>HouseholdPhone__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Household Accounts, uses fields of non-excluded, ordered related Contacts. Generated automatically. --></help>
+        <label>Informele Begroeting</label>
+        <name>Informal_Greeting__c</name>
+    </fields>
+    <fields>
+        <label>Grootste Gift</label>
+        <name>LargestAmount__c</name>
+    </fields>
+    <fields>
+        <label>Laatste Gift Datum</label>
+        <name>LastCloseDate__c</name>
+    </fields>
+    <fields>
+        <label>Laatste Lidmaatschap Bedrag</label>
+        <name>LastMembershipAmount__c</name>
+    </fields>
+    <fields>
+        <label>Laatste Lidmaatschap Datum</label>
+        <name>LastMembershipDate__c</name>
+    </fields>
+    <fields>
+        <label>Laatste Lidmaatschap Niveau</label>
+        <name>LastMembershipLevel__c</name>
+    </fields>
+    <fields>
+        <label>Laatste Lidmaatschap Herkomst</label>
+        <name>LastMembershipOrigin__c</name>
+    </fields>
+    <fields>
+        <label>Laatste Gift Bedrag</label>
+        <name>LastOppAmount__c</name>
+    </fields>
+    <fields>
+        <label>Einddatum Lidmaatschap</label>
+        <name>MembershipEndDate__c</name>
+    </fields>
+    <fields>
+        <label>Begindatum Lidmaatschap</label>
+        <name>MembershipJoinDate__c</name>
+    </fields>
+    <fields>
+        <label>Totaal Aantal Giften</label>
+        <name>NumberOfClosedOpps__c</name>
+    </fields>
+    <fields>
+        <label>Aantal Lidmaatschappen</label>
+        <name>NumberOfMembershipOpps__c</name>
+    </fields>
+    <fields>
+        <label>Totaal Giften Twee Jaar Geleden</label>
+        <name>OppAmount2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <label>Totaal Giften Laatste N Dagen</label>
+        <name>OppAmountLastNDays__c</name>
+    </fields>
+    <fields>
+        <label>Totaal Giften Vorig Jaar</label>
+        <name>OppAmountLastYear__c</name>
+    </fields>
+    <fields>
+        <label>Totaal Giften Dit Jaar</label>
+        <name>OppAmountThisYear__c</name>
+    </fields>
+    <fields>
+        <label>Aantal Giften Twee Jaar Geleden</label>
+        <name>OppsClosed2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <label>Aantal Giften Laatste N Dagen</label>
+        <name>OppsClosedLastNDays__c</name>
+    </fields>
+    <fields>
+        <label>Aantal Giften Vorig Jaar</label>
+        <name>OppsClosedLastYear__c</name>
+    </fields>
+    <fields>
+        <label>Aantal Giften Huidig Jaar</label>
+        <name>OppsClosedThisYear__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Household Accounts, specifies which name related fields should not be automatically populated by the Householding code. --></help>
+        <label>_SYSTEM: AANGEPASTE NAAMGEVING</label>
+        <name>SYSTEM_CUSTOM_NAMING__c</name>
+        <picklistValues>
+            <masterLabel>Formal_Greeting__c</masterLabel>
+            <translation><!-- Formal_Greeting__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Informal_Greeting__c</masterLabel>
+            <translation><!-- Informal_Greeting__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Name</masterLabel>
+            <translation><!-- Name --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Kleinste Gift</label>
+        <name>SmallestAmount__c</name>
+    </fields>
+    <fields>
+        <label>Totaal Lidmaatschap Bedag</label>
+        <name>TotalMembershipOppAmount__c</name>
+    </fields>
+    <fields>
+        <label>Totaal Giften</label>
+        <name>TotalOppAmount__c</name>
+    </fields>
+</CustomObjectTranslation>

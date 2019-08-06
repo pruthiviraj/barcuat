@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invoice Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- CGST Amount --></label>
+        <name>CGST_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CGST % --></label>
+        <name>CGST__c</name>
+    </fields>
+    <fields>
+        <label><!-- GST Rate --></label>
+        <name>GST_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGST Amount --></label>
+        <name>IGST_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGST % --></label>
+        <name>IGST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice --></label>
+        <name>Invoice__c</name>
+        <relationshipLabel><!-- Invoice Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is IGST --></label>
+        <name>Is_IGST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kitting Amount --></label>
+        <name>Kitting_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kitting --></label>
+        <name>Kitting__c</name>
+        <relationshipLabel><!-- Invoice Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SGST Amount --></label>
+        <name>SGST_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- SGST % --></label>
+        <name>SGST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>Total_Amount__c</name>
+    </fields>
+    <layouts>
+        <layout>Invoice Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Information --></label>
+            <section>Pricing Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

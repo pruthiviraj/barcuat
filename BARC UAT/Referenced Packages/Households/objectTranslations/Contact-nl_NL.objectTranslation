@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Gemiddelde Gift</label>
+        <name>AverageAmount__c</name>
+    </fields>
+    <fields>
+        <label>Beste Gift Jaar Totaal</label>
+        <name>Best_Gift_Year_Total__c</name>
+    </fields>
+    <fields>
+        <label>Beste Gift Jaar</label>
+        <name>Best_Gift_Year__c</name>
+    </fields>
+    <fields>
+        <label>Eerste Gift Datum</label>
+        <name>FirstCloseDate__c</name>
+    </fields>
+    <fields>
+        <label>Postadres Huishouden</label>
+        <name>Formula_HouseholdMailingAddress__c</name>
+    </fields>
+    <fields>
+        <label>Telefoon Huishouden</label>
+        <name>Formula_HouseholdPhone__c</name>
+    </fields>
+    <fields>
+        <label>Huishouden Naamgeving Volgorde</label>
+        <name>Household_Naming_Order__c</name>
+    </fields>
+    <fields>
+        <label>Huishouden</label>
+        <name>Household__c</name>
+        <relationshipLabel>Huishouden Leden</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Grootste Gift</label>
+        <name>LargestAmount__c</name>
+    </fields>
+    <fields>
+        <label>Laatste Gift Datum Huishouden</label>
+        <name>LastCloseDateHH__c</name>
+    </fields>
+    <fields>
+        <label>Laatste Gift Datum</label>
+        <name>LastCloseDate__c</name>
+    </fields>
+    <fields>
+        <label>Laatste Lidmaatschap Bedrag</label>
+        <name>LastMembershipAmount__c</name>
+    </fields>
+    <fields>
+        <label>Laaste Lidmaatschap Datum</label>
+        <name>LastMembershipDate__c</name>
+    </fields>
+    <fields>
+        <label>Laatste Lidmaatschap Niveau</label>
+        <name>LastMembershipLevel__c</name>
+    </fields>
+    <fields>
+        <label>Laatste Lidmaatschap Herkomst</label>
+        <name>LastMembershipOrigin__c</name>
+    </fields>
+    <fields>
+        <label>Laatste Gift Bedrag</label>
+        <name>LastOppAmount__c</name>
+    </fields>
+    <fields>
+        <label>Einddatum Lidmaatschap</label>
+        <name>MembershipEndDate__c</name>
+    </fields>
+    <fields>
+        <label>Begindatum Lidmaatschap</label>
+        <name>MembershipJoinDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines which household names this contact is NOT included as part of. --></help>
+        <label>Uitsluitingen Naamgeving</label>
+        <name>Naming_Exclusions__c</name>
+        <picklistValues>
+            <masterLabel>Household__c.Formal_Greeting__c</masterLabel>
+            <translation><!-- Household__c.Formal_Greeting__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household__c.Informal_Greeting__c</masterLabel>
+            <translation><!-- Household__c.Informal_Greeting__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household__c.Name</masterLabel>
+            <translation><!-- Household__c.Name --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Totaal Aantal Giften</label>
+        <name>NumberOfClosedOpps__c</name>
+    </fields>
+    <fields>
+        <label>Aantal Lidmaatschappen</label>
+        <name>NumberOfMembershipOpps__c</name>
+    </fields>
+    <fields>
+        <label>Giften Twee Jaar Geleden Totaal</label>
+        <name>OppAmount2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <label>Giften Laatste N Dagen Totaal</label>
+        <name>OppAmountLastNDays__c</name>
+    </fields>
+    <fields>
+        <label>Giften Huishouden Vorig Jaar Totaal</label>
+        <name>OppAmountLastYearHH__c</name>
+    </fields>
+    <fields>
+        <label>Giften Vorig Jaar Totaal</label>
+        <name>OppAmountLastYear__c</name>
+    </fields>
+    <fields>
+        <label>Giften Huishouden Huidig Jaar Totaal</label>
+        <name>OppAmountThisYearHH__c</name>
+    </fields>
+    <fields>
+        <label>Giften Huidig Jaar Totaal</label>
+        <name>OppAmountThisYear__c</name>
+    </fields>
+    <fields>
+        <label>Aantal Giften Twee Jaar Geleden</label>
+        <name>OppsClosed2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <label>Aantal Giften Laatste N Dagen</label>
+        <name>OppsClosedLastNDays__c</name>
+    </fields>
+    <fields>
+        <label>Aantal Giften Vorig Jaar</label>
+        <name>OppsClosedLastYear__c</name>
+    </fields>
+    <fields>
+        <label>Aantal Giften Huidig Jaar</label>
+        <name>OppsClosedThisYear__c</name>
+    </fields>
+    <fields>
+        <label>Kleinste Gift</label>
+        <name>SmallestAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total soft credit amount last year. --></help>
+        <label>Soft Credit Vorig Jaar</label>
+        <name>Soft_Credit_Last_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total soft credit amount this year --></help>
+        <label>Soft Credit Huidg Jaar</label>
+        <name>Soft_Credit_This_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total amount in soft credits for this Contact&apos;s lifetime. Defined in the Household Settings tab. --></help>
+        <label>Soft Credit Totaal</label>
+        <name>Soft_Credit_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total soft credit amount two years ago. --></help>
+        <label>Soft Credit Twee Jaar Geleden</label>
+        <name>Soft_Credit_Two_Years_Ago__c</name>
+    </fields>
+    <fields>
+        <label>_SYSTEEM: HUISHOUDEN PROCESSOR-VEROUDERD</label>
+        <name>SystemHouseholdProcessor__c</name>
+        <picklistValues>
+            <masterLabel>All Individual Contacts</masterLabel>
+            <translation><!-- All Individual Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All New or Edited Contacts</masterLabel>
+            <translation><!-- All New or Edited Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Contacts</masterLabel>
+            <translation><!-- No Contacts --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Totaal Lidmaatschap Bedrag</label>
+        <name>TotalMembershipOppAmount__c</name>
+    </fields>
+    <fields>
+        <label>Giften Totaal</label>
+        <name>TotalOppAmount__c</name>
+    </fields>
+    <fields>
+        <label>Giften Huishouden Totaal</label>
+        <name>Total_Household_Gifts__c</name>
+    </fields>
+    <webLinks>
+        <label>Kopieer Adres naar Huishouden</label>
+        <name>Copy_Address_to_Household</name>
+    </webLinks>
+    <webLinks>
+        <label>Huishouden</label>
+        <name>Household</name>
+    </webLinks>
+</CustomObjectTranslation>

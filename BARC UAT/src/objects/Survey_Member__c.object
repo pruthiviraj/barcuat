@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Access_to_internet__c</fullName>
+        <externalId>false</externalId>
+        <label>Access to internet</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Age__c</fullName>
+        <externalId>false</externalId>
+        <label>Age (Completed Years)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_House_Ownership_status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What best describes the ownership of this house?</inlineHelpText>
+        <label>Current House Ownership status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ownership</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rented</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Provided by Employer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current_Occupation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Kindly Select the Occupation (Select the appropriate one)</inlineHelpText>
+        <label>Current Occupation</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Working</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Small Scale Traders</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Worker - with no professional training / laborer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Worker-with professional training/ skill set</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Shop Owners</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Businessman/Industrialist with no employees</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Businessman/Industrialist with 1-9 employees</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Businessman/Industrialist with more than 10 employees</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Self-employed professional</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Clerk/Salesman</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Supervisory level</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Officer/Executive-Junior</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Officer/Executive-Middle/Senior</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Farmer and landowner of the same farming land</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Farmer- on contract basis/ working on someone else</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agricultural worker</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Owner of livestock</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Owner of fisheries</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Owner of poultry</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Artisan / Skilled/ trained labor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Postman</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Teacher</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Doctor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service (Staying in one village and working in   another village)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service (Staying in one village and working in  City/town)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Farmer- on contract basis/ working on someone else’s farm</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DOB__c</fullName>
+        <externalId>false</externalId>
+        <label>DOB</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_of_birth__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of birth</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Decision_Maker_for_buying_groceries__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>In the above list of members, who takes all the decisions for purchasing daily grocery at your residence?</inlineHelpText>
+        <label>Decision Maker for buying groceries</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Education_Qualification__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the educational qualification for Member (Select the appropriate one)</inlineHelpText>
+        <label>Education Qualification</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cannot Read/Write</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Can Read / Write but no formal schooling</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>School - Up to 4th standard</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5th - 9th standard</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SSC/HSC(10th - 12th)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Some College (incl. diploma but not Graduate)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Graduate–General (B.A., B.Sc., B.Com.)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Graduate–Professional (B.E., M.B.B.S., B.Tech)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Post-Graduate-General (M.A., M.Sc., M.Com, M.Phil, PhD)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Post-Graduate-Professional (M.E., M.Tech., MBA, etc.)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
+        <externalId>false</externalId>
+        <label>Gender</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Male</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Female</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Highest_household_contributer__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>In the above list of members,who amongst all the member living at your residence contributes the most to household expenditure?</inlineHelpText>
+        <label>Highest household contributer</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Language_Spoken_amongst_Family__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>when speaking amongst the family members, which all languages are spoken? (Select Multiple Option)</inlineHelpText>
+        <label>Language Spoken amongst Family</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lang_List</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Most_Common_lang_amongst_family_member__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Which is the most often spoken language among your family members?</inlineHelpText>
+        <label>Most Common lang amongst family member</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lang_List</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Survey__c</fullName>
+        <externalId>false</externalId>
+        <label>Survey</label>
+        <referenceTo>Survey__c</referenceTo>
+        <relationshipLabel>Survey Member</relationshipLabel>
+        <relationshipName>Survey_Member</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Total_Room_in_House_Except_Kitc_WC__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>In all, how many rooms are there (including kitchen but excluding toilets) for your household’s use?</inlineHelpText>
+        <label>Total Room in House(Except Kitc &amp; WC)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>10+</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_members_living_currently__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How many members reside at your home, including yourself? (Please include friends, room-mates who live with you full-time)</inlineHelpText>
+        <label>Total members living currently</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Who_is_Respondant__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>In the above list of members, who is the respondent?</inlineHelpText>
+        <label>Who is Respondant</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Work_status_of_member__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Working Status for Member (Select the appropriate one)</inlineHelpText>
+        <label>Work status of member</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Working</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Student</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Retired</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Working part-time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Working full time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Studying in school / College Student &amp; Working part-time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Studying in school / College Student &amp; Working full time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Full/Time</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Part/Time</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Your_Native_Language__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is your mother tongue? By mother tongue I mean the language your mother first spoke to you in when you were born. (Select the language one)</inlineHelpText>
+        <label>Your Native Language</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lang_List</valueSetName>
+        </valueSet>
+    </fields>
+    <label>Survey Member</label>
+    <nameField>
+        <displayFormat>SM-{0}</displayFormat>
+        <label>Survey Member No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Survey Member</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

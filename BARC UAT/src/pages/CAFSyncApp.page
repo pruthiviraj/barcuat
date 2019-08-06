@@ -1,0 +1,20 @@
+<apex:page controller="CAFSyncController">
+    <apex:form >
+        <html>
+
+        <head>
+            <apex:slds />
+        </head>
+
+        <body>
+                <apex:commandButton action="{!syncOperators}" value="Sync Operators" id="syncOp" styleClass="slds-button slds-button_brand"/>
+                <apex:commandButton action="{!syncLocalOperators}" value="Sync Local Operators" id="syncLOp" styleClass="slds-button slds-button_brand"/>
+                <apex:commandButton action="{!syncAllTechnicians}" value="Sync Technician" id="syncTec" styleClass="slds-button slds-button_brand"/>
+                <apex:commandButton action="{!syncAllExistingSurveys}" value="Sync Existing Survey Data" id="syncSurvey" styleClass="slds-button slds-button_brand"/>
+
+        </body>
+
+        </html>
+    </apex:form>
+
+</apex:page>

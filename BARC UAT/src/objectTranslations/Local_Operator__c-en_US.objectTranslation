@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner / Local Operator</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner / Local Operators</value>
+    </caseValues>
+    <fields>
+        <label><!-- CAFID --></label>
+        <name>CAFID__c</name>
+    </fields>
+    <fields>
+        <label><!-- LCO / Partner City --></label>
+        <name>LCO_Partner_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- LCO / Partner Code --></label>
+        <name>LCO_Partner_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- LCO / Partner Country --></label>
+        <name>LCO_Partner_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- LCO / Partner District --></label>
+        <name>LCO_Partner_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- LCO / Partner Email --></label>
+        <name>LCO_Partner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- LCO / Partner Phone --></label>
+        <name>LCO_Partner_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- LCO / Partner Pincode --></label>
+        <name>LCO_Partner_Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- LCO / Partner State --></label>
+        <name>LCO_Partner_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator --></label>
+        <name>Operator__c</name>
+        <relationshipLabel><!-- Partner / Local Operators --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TSM Mobile No --></label>
+        <name>TSM_Mobile_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- TSM Name --></label>
+        <name>TSM_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>Local Operator Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Packing List</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Packing Lists</value>
+    </caseValues>
+    <fields>
+        <label><!-- Bill To Address --></label>
+        <name>Bill_To_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To City --></label>
+        <name>Bill_To_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Country --></label>
+        <name>Bill_To_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Email --></label>
+        <name>Bill_To_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Name --></label>
+        <name>Bill_To_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Operator --></label>
+        <name>Bill_To_Operator__c</name>
+        <relationshipLabel><!-- Packing Lists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Bill To Phone --></label>
+        <name>Bill_To_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Pincode --></label>
+        <name>Bill_To_Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To State --></label>
+        <name>Bill_To_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declaration --></label>
+        <name>Declaration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Mode --></label>
+        <name>Delivery_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose --></label>
+        <name>Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Address --></label>
+        <name>Ship_To_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To City --></label>
+        <name>Ship_To_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Country --></label>
+        <name>Ship_To_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Email --></label>
+        <name>Ship_To_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Local Operator --></label>
+        <name>Ship_To_Local_Operator__c</name>
+        <relationshipLabel><!-- Packing Lists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To Name --></label>
+        <name>Ship_To_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Operator --></label>
+        <name>Ship_To_Operator__c</name>
+        <relationshipLabel><!-- Packing Lists (Ship To Operator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To Phone --></label>
+        <name>Ship_To_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Pincode --></label>
+        <name>Ship_To_Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To State --></label>
+        <name>Ship_To_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transporter Name: --></label>
+        <name>Transporter_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>Packing List Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery Information --></label>
+            <section>Delivery Information</section>
+        </sections>
+        <sections>
+            <label><!-- Operator Address Information --></label>
+            <section>Operator Address Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Add_Items --></label>
+        <name>Add_Items</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_DC --></label>
+        <name>Generate_DC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Invoice --></label>
+        <name>Generate_Invoice</name>
+    </webLinks>
+</CustomObjectTranslation>

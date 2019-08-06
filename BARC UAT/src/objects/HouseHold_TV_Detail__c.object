@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Availability_of_Remote__c</fullName>
+        <externalId>false</externalId>
+        <label>Availability of Remote</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_VC_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer VC No</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DTH_Services__c</fullName>
+        <externalId>false</externalId>
+        <label>DTH Services</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dish TV</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Airtel</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DD Direct</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tata Sky</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Videocon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sun Direct</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reliance Big TV</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Do_you_use_recording_feature__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do you use recording feature</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Dongle_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Dongle Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Flat_Screen__c</fullName>
+        <externalId>false</externalId>
+        <label>Flat Screen</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HD_Enabled_TV__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Enabled TV</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HD_Subscription__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Subscription</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HouseHold__c</fullName>
+        <externalId>false</externalId>
+        <label>HouseHold</label>
+        <referenceTo>HouseHold__c</referenceTo>
+        <relationshipLabel>HouseHold TV Details</relationshipLabel>
+        <relationshipName>HouseHold_TV_Details</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Kitting__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Kitting</label>
+        <referenceTo>Kitting__c</referenceTo>
+        <relationshipLabel>HouseHold TV Details</relationshipLabel>
+        <relationshipName>HouseHold_TV_Details</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Presence_of_DVR_PVR__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Presence of DVR/PVR</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>STB_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>STB ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STB_Make__c</fullName>
+        <externalId>false</externalId>
+        <label>STB Make</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HuaweiDS366</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cisco</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DEN</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SITI</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Serial_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Serial Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Size_of_Screen_in_Inches__c</fullName>
+        <externalId>false</externalId>
+        <label>Size of Screen (in Inches)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>14 inches or less</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>15-20 inches</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>21-27 Inches</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>28-32 Inches</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>33-42 Inches</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>43 inches or more</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>T7_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Type_of_Television__c, 
+						&quot;Color TV&quot;, &quot;1&quot;, 
+						&quot;Black &amp; White&quot;, &quot;2&quot;,
+						&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>T7_2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T7_4__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Size_of_Screen_in_Inches__c, 
+						&quot;14 inches or less&quot;, &quot;1&quot;, 
+						&quot;15-20 inches&quot;, &quot;11&quot;,
+						&quot;21-27 Inches&quot;, &quot;12&quot;,
+						&quot;28-32 Inches&quot;, &quot;13&quot;,
+						&quot;33-42 Inches&quot;, &quot;14&quot;,
+						&quot;43 inches or more&quot;, &quot;15&quot;,
+						&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>T7_4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T7_6__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Type_of_TV_Screen__c, 
+						&quot;CRT&quot;, &quot;1&quot;, 
+						&quot;LCD&quot;, &quot;2&quot;,
+						&quot;Plasma&quot;, &quot;3&quot;,
+						&quot;HDTV&quot;, &quot;4&quot;,
+						&quot;Projection TV&quot;, &quot;5&quot;,
+						&quot;LED&quot;, &quot;6&quot;,
+						&quot;Others&quot;, &quot;7&quot;,
+						&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>T7_6</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T7_9__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Presence_of_DVR_PVR__c == true, &quot;1&quot;,&quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>T7_9</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TV_Signal_Reception__c</fullName>
+        <externalId>false</externalId>
+        <label>TV Signal Reception</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DTH</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Aerial / Normal Antenna</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cable Operator with Set Top Box</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cable Operator without Set Top Box</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IPTV</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TV_sets_located_at_your_home__c</fullName>
+        <externalId>false</externalId>
+        <label>TV sets located at your home</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hall/Drawing Room</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bedroom</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kitchen</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dining Room</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servent Room</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prayer Room</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Balcony</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_of_TV_Screen__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of TV Screen</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CRT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LCD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Plasma</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HDTV</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Projection TV</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LED</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_of_Television__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Television</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Color TV</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Black &amp; White</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>USB_HUB_Installed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>USB HUB Installed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Year_Since_Acquired__c</fullName>
+        <externalId>false</externalId>
+        <label>Year Since Acquired</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>HouseHold TV Detail</label>
+    <nameField>
+        <displayFormat>HHTV-{0}</displayFormat>
+        <label>Household TV No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>HouseHold TV Details</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

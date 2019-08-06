@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Age__c</fullName>
+        <externalId>false</externalId>
+        <label>Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Birthdate__c</fullName>
+        <externalId>false</externalId>
+        <label>Birthdate</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CWE_Detail_Occupation__c</fullName>
+        <externalId>false</externalId>
+        <label>CWE Detail Occupation</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CWE_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>CWE Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DOB__c</fullName>
+        <externalId>false</externalId>
+        <label>DOB</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Education__c</fullName>
+        <externalId>false</externalId>
+        <label>Education</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Illiterate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Literate but no formal schooling</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>School – Up to 4th standard</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5th – 9th standard</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SSC/HSC(10th – 12th)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Some College(incl.dip) but not Graduate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Graduate–General (B.A.,B.Sc.B.Com.)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Graduate–Professional (B.E., M.B.B.S., B.Tech)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Post-Graduate-General (M.A., M.Sc., M.Com, M.Phil, PhD)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Post-Graduate-Professional (M.E., M.Tech., MBA etc.)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
+        <externalId>false</externalId>
+        <label>Gender</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Male</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Female</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HouseHold__c</fullName>
+        <externalId>false</externalId>
+        <label>HouseHold</label>
+        <referenceTo>HouseHold__c</referenceTo>
+        <relationshipLabel>HouseHold Members</relationshipLabel>
+        <relationshipName>HouseHold_Members</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Identification__c</fullName>
+        <externalId>false</externalId>
+        <label>Identification</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mother_Serial_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Mother Serial Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Occupation__c</fullName>
+        <externalId>false</externalId>
+        <label>Occupation</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Working</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Small Scale Traders</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Worker - with no professional training / laborer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Worker-with professional training/ skill set</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Shop Owners</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Businessman/Industrialist with no employees</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Businessman/Industrialist with 1-9 employees</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Businessman/Industrialist with more than 10 employees</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Self-employed professional</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Clerk/Salesman</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Supervisory level</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Officer/Executive-Junior</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Officer/Executive-Middle/Senior</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Farmer and landowner of the same farming land</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Farmer- on contract basis/ working on someone else</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agricultural worker</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Owner of livestock</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Owner of fisheries</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Owner of poultry</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Artisan / Skilled/ trained labor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Postman</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Teacher</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Doctor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service (Staying in one village and working in   another village)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service (Staying in one village and working in  City/town)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RuralUrban__c</fullName>
+        <externalId>false</externalId>
+        <label>RuralUrban</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Need Values</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Serial_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Serial Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Serial__c</fullName>
+        <externalId>false</externalId>
+        <label>Serial #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T4M_10__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Occupation__c, 
+						&quot;Not Working&quot;, &quot;1&quot;, 
+						&quot;Small Scale Traders&quot;, &quot;2&quot;, 
+						&quot;Worker-with no professional training / laborer&quot;, &quot;3&quot;, 
+						&quot;Worker-with professional training/ skill set&quot;, &quot;4&quot;, 
+						&quot;Shop Owners&quot;, &quot;5&quot;, 
+						&quot;Businessman/Industrialist with no employees&quot;, &quot;6&quot;, 
+						&quot;Businessman/Industrialist with 1-9 employees&quot;, &quot;7&quot;, 
+						&quot;Businessman/Industrialist with more than 10 employees&quot;, &quot;8&quot;, 
+						&quot;Self-employed professional&quot;, &quot;9&quot;, 
+						&quot;Clerk/Salesman&quot;, &quot;10&quot;, 
+						&quot;Supervisory level&quot;, &quot;11&quot;, 
+						&quot;Officer/Executive-Junior&quot;, &quot;12&quot;, 
+						&quot;Officer/Executive-Middle/Senior&quot;, &quot;13&quot;, 
+						&quot;Farmer and landowner of the same farming land&quot;, &quot;14&quot;, 
+						&quot;Farmer- on contract basis/ working on someone else&quot;, &quot;15&quot;, 
+						&quot;Agricultural worker&quot;, &quot;16&quot;, 
+						&quot;Owner of livestock&quot;, &quot;17&quot;, 
+						&quot;Owner of fisheries&quot;, &quot;18&quot;, 
+						&quot;Owner of poultry&quot;, &quot;19&quot;,
+						&quot;Artisan / Skilled/ trained labor&quot;, &quot;20&quot;,
+						&quot;Postman&quot;, &quot;21&quot;,
+						&quot;Teacher&quot;, &quot;22&quot;,
+						&quot;Doctor&quot;, &quot;23&quot;,
+						&quot;Service (Staying in one village and working in another village)&quot;, &quot;24&quot;,
+						&quot;Service (Staying in one village and working in City/town)&quot;, &quot;25&quot;,
+						&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>T4M_10</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T4M_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Gender__c, 
+						&quot;Male&quot;, &quot;1&quot;, 
+						&quot;Female&quot;, &quot;2&quot;,
+					&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>T4M_3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T4M_8__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Education__c, 
+						&quot;Illiterate&quot;, &quot;1&quot;, 
+						&quot;Literate but no formal schooling&quot;, &quot;2&quot;,
+						&quot;School – Up to 4th standard&quot;, &quot;3&quot;,
+						&quot;5th – 9th standard&quot;, &quot;4&quot;,
+						&quot;SSC/HSC(10th – 12th)&quot;, &quot;5&quot;,
+						&quot;Some College(incl.dip) but not Graduate&quot;, &quot;6&quot;, 
+						&quot;Graduate–General (B.A.,B.Sc.B.Com.)&quot;, &quot;7&quot;, 
+						&quot;Graduate–Professional (B.E., M.B.B.S., B.Tech)&quot;, &quot;8&quot;, 
+						&quot;Post-Graduate-General (M.A., M.Sc., M.Com, M.Phil, PhD)&quot;, &quot;9&quot;, 
+						&quot;Post-Graduate-Professional (M.E., M.Tech., MBA etc.)&quot;, &quot;10&quot;, 
+					&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>T4M_8</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T4M_9__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(WS__c, 
+						&quot;Not working&quot;, &quot;1&quot;, 
+						&quot;Student&quot;, &quot;2&quot;,
+						&quot;Retired&quot;, &quot;3&quot;,
+						&quot;Working part-time (&lt;20 hrs / week)&quot;, &quot;4&quot;,
+						&quot;Working full time (&gt;20 hrs / week)&quot;, &quot;5&quot;,
+						&quot;Student Working part-time (&lt;20 hrs / week)&quot;, &quot;6&quot;,
+						&quot;Student Working full time (&gt;20 hrs / week)&quot;, &quot;7&quot;,
+						&quot;Seasonal part-time worker (&lt;20 hrs / week)&quot;, &quot;8&quot;,
+						&quot;Seasonal full time worker (&gt;20 hrs / week)&quot;, &quot;9&quot;,
+					&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>T4M_9</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WS__c</fullName>
+        <externalId>false</externalId>
+        <label>WS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not working</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Student</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Retired</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Working part-time (&lt;20 hrs / week)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Working full time (&gt;20 hrs / week)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Student Working part-time (&lt;20 hrs / week)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Student Working full time (&gt;20 hrs / week)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Seasonal part-time worker (&lt;20 hrs / week)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Seasonal full time worker (&gt;20 hrs / week)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>HouseHold Member</label>
+    <nameField>
+        <displayFormat>HHM-{0}</displayFormat>
+        <label>HouseHold Member No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>HouseHold Members</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

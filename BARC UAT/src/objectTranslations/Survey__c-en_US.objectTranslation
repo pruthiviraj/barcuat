@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Survey</value>
+    </caseValues>
+    <fields>
+        <label><!-- Callcenter Technician --></label>
+        <name>Callcenter_Technician__c</name>
+        <relationshipLabel><!-- Survey (Callcenter Technician) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Survey --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current House Ownership status --></label>
+        <name>Current_House_Ownership_status__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provided by Employer</masterLabel>
+            <translation><!-- Provided by Employer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rented</masterLabel>
+            <translation><!-- Rented --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Decision Maker for buying groceries --></label>
+        <name>Decision_Maker_for_buying_groceries__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many different cable or DTH connections do you have at home? --></help>
+        <label><!-- Different cable or DTH connections --></label>
+        <name>Different_cable_or_DTH_connections__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- District Name --></label>
+        <name>District_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the durables which are in working condition, at your residence (Select Multiple option) --></help>
+        <label><!-- Durables in working condition --></label>
+        <name>Durables_in_working_condition__c</name>
+        <picklistValues>
+            <masterLabel>Air Conditioner</masterLabel>
+            <translation><!-- Air Conditioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Car / Jeep / Van</masterLabel>
+            <translation><!-- Car / Jeep / Van --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Celling Fan</masterLabel>
+            <translation><!-- Celling Fan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color Tv</masterLabel>
+            <translation><!-- Color Tv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Does the Chief wage earner (contributes the most to household expenditure) of the Household own any agricultural land?</masterLabel>
+            <translation><!-- Does the Chief wage earner (contributes the most to household expenditure) of the Household own any agricultural land? --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LPG Stove</masterLabel>
+            <translation><!-- LPG Stove --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Computer/ Laptop</masterLabel>
+            <translation><!-- Personal Computer/ Laptop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refrigerator</masterLabel>
+            <translation><!-- Refrigerator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Two-Wheeler</masterLabel>
+            <translation><!-- Two-Wheeler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Washing Machine</masterLabel>
+            <translation><!-- Washing Machine --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Head end --></label>
+        <name>Head_end__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highest household contributer --></label>
+        <name>Highest_household_contributer__c</name>
+    </fields>
+    <fields>
+        <label><!-- HouseHold --></label>
+        <name>HouseHold__c</name>
+        <relationshipLabel><!-- Survey --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Looking at the following list Please tell me whether you or any other household member works for any of the following type of companies: (If administered by Technician else don’t ask) --></help>
+        <label><!-- House Member Works in of the Companies --></label>
+        <name>House_Member_Works_in_of_the_Companies__c</name>
+        <picklistValues>
+            <masterLabel>Advertising Agency</masterLabel>
+            <translation><!-- Advertising Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital agencies</masterLabel>
+            <translation><!-- Digital agencies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Research Agency</masterLabel>
+            <translation><!-- Marketing Research Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media Company (Print, Television, Radio, Satellite Channels etc.)</masterLabel>
+            <translation><!-- Media Company (Print, Television, Radio, Satellite Channels etc.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None Of The Above</masterLabel>
+            <translation><!-- None Of The Above --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations Company</masterLabel>
+            <translation><!-- Public Relations Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail shop owner selling DTH, recharging DTH</masterLabel>
+            <translation><!-- Retail shop owner selling DTH, recharging DTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecom &amp; Internet</masterLabel>
+            <translation><!-- Telecom &amp; Internet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Household Status --></label>
+        <name>Household_StatusN__c</name>
+        <picklistValues>
+            <masterLabel>Agreed Scheduled</masterLabel>
+            <translation><!-- Agreed Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dongle Not Working</masterLabel>
+            <translation><!-- Dongle Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Door Locked</masterLabel>
+            <translation><!-- Door Locked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORWARDED</masterLabel>
+            <translation><!-- FORWARDED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Not Found</masterLabel>
+            <translation><!-- Home Not Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installed agree</masterLabel>
+            <translation><!-- Installed agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Call</masterLabel>
+            <translation><!-- Next Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Visit</masterLabel>
+            <translation><!-- Next Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Connected</masterLabel>
+            <translation><!-- Not Connected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Eligible</masterLabel>
+            <translation><!-- Not Eligible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refuse</masterLabel>
+            <translation><!-- Refuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STB Not Working</masterLabel>
+            <translation><!-- STB Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TERMINATED</masterLabel>
+            <translation><!-- TERMINATED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Issue</masterLabel>
+            <translation><!-- Technical Issue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Household Status --></label>
+        <name>Household_Status__c</name>
+        <picklistValues>
+            <masterLabel>Agreed Scheduled</masterLabel>
+            <translation><!-- Agreed Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dongle Not Working</masterLabel>
+            <translation><!-- Dongle Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Door Locked</masterLabel>
+            <translation><!-- Door Locked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORWARDED</masterLabel>
+            <translation><!-- FORWARDED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Not Found</masterLabel>
+            <translation><!-- Home Not Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installed agree</masterLabel>
+            <translation><!-- Installed agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Call</masterLabel>
+            <translation><!-- Next Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Visit</masterLabel>
+            <translation><!-- Next Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Connected</masterLabel>
+            <translation><!-- Not Connected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Eligible</masterLabel>
+            <translation><!-- Not Eligible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refuse</masterLabel>
+            <translation><!-- Refuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STB Not Working</masterLabel>
+            <translation><!-- STB Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TERMINATED</masterLabel>
+            <translation><!-- TERMINATED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Issue</masterLabel>
+            <translation><!-- Technical Issue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Installation Date --></label>
+        <name>Installation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is your household currently part of a Television Measurement Panel? --></help>
+        <label><!-- Is household part of TMP --></label>
+        <name>Is_household_part_of_TMP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Language Spoken amongst Family --></help>
+        <label><!-- Language Spoken amongst Family --></label>
+        <name>Language_Spoken_amongst_Family__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Common lang amongst family member --></label>
+        <name>Most_Common_lang_amongst_family_member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pincode --></label>
+        <name>Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recruitment Date --></label>
+        <name>Recruitment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- STB ID/ GOS STB ID --></label>
+        <name>STB_ID_GOS_STB_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Smart Card ID --></label>
+        <name>Smart_Card_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub District Name --></label>
+        <name>Sub_District_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Date --></label>
+        <name>Survey_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- T2QB --></label>
+        <name>T2QB__c</name>
+    </fields>
+    <fields>
+        <label><!-- T4MA --></label>
+        <name>T4MA__c</name>
+    </fields>
+    <fields>
+        <label><!-- T6Q10 --></label>
+        <name>T6Q10__c</name>
+    </fields>
+    <fields>
+        <label><!-- T6Q8 --></label>
+        <name>T6Q8__c</name>
+    </fields>
+    <fields>
+        <label><!-- T8Q12_1 --></label>
+        <name>T8Q12_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technician Number --></label>
+        <name>Technician_Number__c</name>
+        <relationshipLabel><!-- Survey --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Were you part of a Television Measurement Panel in the previous three months? --></help>
+        <label><!-- Television Measurement Panel for 3 mnt --></label>
+        <name>Television_Measurement_Panel_for_3_mnt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Room in House(Except Kitc &amp; WC) --></label>
+        <name>Total_Room_in_House_Except_Kitc_WC__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10+</masterLabel>
+            <translation><!-- 10+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total members living currently --></label>
+        <name>Total_members_living_currently__c</name>
+    </fields>
+    <fields>
+        <label><!-- Town Village --></label>
+        <name>Town_Village__c</name>
+    </fields>
+    <fields>
+        <label><!-- VC No --></label>
+        <name>VC_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who is Respondant --></label>
+        <name>Who_is_Respondant__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many (number of) working TV sets do you have at home? --></help>
+        <label><!-- Working TV sets --></label>
+        <name>Working_TV_sets__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Would you like to be part of a Television Measurement Panel, wherein a dongle would be installed on your Set Top Box to improve our services and acquire critical feedback on any problems faced by our customers? --></help>
+        <label><!-- Would you like to be part of TMP --></label>
+        <name>Would_you_like_to_be_part_of_TMP__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is your mother tongue? By mother tongue I mean the language your mother first spoke to you in when you were born. (Select the language one) --></help>
+        <label><!-- Your Native Language --></label>
+        <name>Your_Native_Language__c</name>
+    </fields>
+    <layouts>
+        <layout>Survey Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

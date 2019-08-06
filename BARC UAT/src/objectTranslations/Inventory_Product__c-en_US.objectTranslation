@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inventory Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inventory Products</value>
+    </caseValues>
+    <fields>
+        <label><!-- Inventory --></label>
+        <name>Inventory__c</name>
+        <relationshipLabel><!-- Inventory Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Added To Kitting --></label>
+        <name>Is_Added_To_Kitting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Cost* --></label>
+        <name>Product_Cost_N__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Cost --></label>
+        <name>Product_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Receive Date --></label>
+        <name>Receive_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remark --></label>
+        <name>Remark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faulty</masterLabel>
+            <translation><!-- Faulty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faulty In Transit</masterLabel>
+            <translation><!-- Faulty In Transit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Transit (Active)</masterLabel>
+            <translation><!-- In Transit (Active) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Ok</masterLabel>
+            <translation><!-- Not Ok --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ok</masterLabel>
+            <translation><!-- Ok --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retest</masterLabel>
+            <translation><!-- Retest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Write-Off</masterLabel>
+            <translation><!-- Write-Off --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Supplier --></label>
+        <name>Supplier__c</name>
+        <relationshipLabel><!-- Inventory Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Warehouse --></label>
+        <name>Warehouse__c</name>
+        <relationshipLabel><!-- Inventory Products --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Inventory Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

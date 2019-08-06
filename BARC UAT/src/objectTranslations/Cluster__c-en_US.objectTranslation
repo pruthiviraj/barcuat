@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cluster</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Clusters</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address Master --></label>
+        <name>Address_Master__c</name>
+        <relationshipLabel><!-- Clusters --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head end --></label>
+        <name>Head_end__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LCO Code --></label>
+        <name>LCO_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Operator --></label>
+        <name>Local_Operator__c</name>
+        <relationshipLabel><!-- Clusters --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Operator --></label>
+        <name>Operator__c</name>
+        <relationshipLabel><!-- Clusters --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pincode --></label>
+        <name>Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sampling --></label>
+        <name>Sampling__c</name>
+        <relationshipLabel><!-- Clusters --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technician No --></label>
+        <name>Technician_No__c</name>
+        <relationshipLabel><!-- Clusters --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Town Village --></label>
+        <name>Town_Village__c</name>
+    </fields>
+    <fields>
+        <label><!-- USB Hub Installed --></label>
+        <name>USB_Hub_Installed__c</name>
+    </fields>
+    <layouts>
+        <layout>Cluster Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

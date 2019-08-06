@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HouseHold Member</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HouseHold Members</value>
+    </caseValues>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Birthdate --></label>
+        <name>Birthdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- CWE Detail Occupation --></label>
+        <name>CWE_Detail_Occupation__c</name>
+    </fields>
+    <fields>
+        <label><!-- CWE Status --></label>
+        <name>CWE_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOB --></label>
+        <name>DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education --></label>
+        <name>Education__c</name>
+        <picklistValues>
+            <masterLabel>5th – 9th standard</masterLabel>
+            <translation><!-- 5th – 9th standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate–General (B.A.,B.Sc.B.Com.)</masterLabel>
+            <translation><!-- Graduate–General (B.A.,B.Sc.B.Com.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate–Professional (B.E., M.B.B.S., B.Tech)</masterLabel>
+            <translation><!-- Graduate–Professional (B.E., M.B.B.S., B.Tech) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illiterate</masterLabel>
+            <translation><!-- Illiterate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Literate but no formal schooling</masterLabel>
+            <translation><!-- Literate but no formal schooling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Graduate-General (M.A., M.Sc., M.Com, M.Phil, PhD)</masterLabel>
+            <translation><!-- Post-Graduate-General (M.A., M.Sc., M.Com, M.Phil, PhD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Graduate-Professional (M.E., M.Tech., MBA etc.)</masterLabel>
+            <translation><!-- Post-Graduate-Professional (M.E., M.Tech., MBA etc.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSC/HSC(10th – 12th)</masterLabel>
+            <translation><!-- SSC/HSC(10th – 12th) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School – Up to 4th standard</masterLabel>
+            <translation><!-- School – Up to 4th standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Some College(incl.dip) but not Graduate</masterLabel>
+            <translation><!-- Some College(incl.dip) but not Graduate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HouseHold --></label>
+        <name>HouseHold__c</name>
+        <relationshipLabel><!-- HouseHold Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Identification --></label>
+        <name>Identification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mother Serial Number --></label>
+        <name>Mother_Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation --></label>
+        <name>Occupation__c</name>
+        <picklistValues>
+            <masterLabel>Agricultural worker</masterLabel>
+            <translation><!-- Agricultural worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Artisan / Skilled/ trained labor</masterLabel>
+            <translation><!-- Artisan / Skilled/ trained labor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Businessman/Industrialist with 1-9 employees</masterLabel>
+            <translation><!-- Businessman/Industrialist with 1-9 employees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Businessman/Industrialist with more than 10 employees</masterLabel>
+            <translation><!-- Businessman/Industrialist with more than 10 employees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Businessman/Industrialist with no employees</masterLabel>
+            <translation><!-- Businessman/Industrialist with no employees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clerk/Salesman</masterLabel>
+            <translation><!-- Clerk/Salesman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor</masterLabel>
+            <translation><!-- Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farmer and landowner of the same farming land</masterLabel>
+            <translation><!-- Farmer and landowner of the same farming land --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farmer- on contract basis/ working on someone else</masterLabel>
+            <translation><!-- Farmer- on contract basis/ working on someone else --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Working</masterLabel>
+            <translation><!-- Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Officer/Executive-Junior</masterLabel>
+            <translation><!-- Officer/Executive-Junior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Officer/Executive-Middle/Senior</masterLabel>
+            <translation><!-- Officer/Executive-Middle/Senior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner of fisheries</masterLabel>
+            <translation><!-- Owner of fisheries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner of livestock</masterLabel>
+            <translation><!-- Owner of livestock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner of poultry</masterLabel>
+            <translation><!-- Owner of poultry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postman</masterLabel>
+            <translation><!-- Postman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-employed professional</masterLabel>
+            <translation><!-- Self-employed professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service (Staying in one village and working in   another village)</masterLabel>
+            <translation><!-- Service (Staying in one village and working in   another village) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service (Staying in one village and working in  City/town)</masterLabel>
+            <translation><!-- Service (Staying in one village and working in  City/town) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shop Owners</masterLabel>
+            <translation><!-- Shop Owners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Scale Traders</masterLabel>
+            <translation><!-- Small Scale Traders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supervisory level</masterLabel>
+            <translation><!-- Supervisory level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher</masterLabel>
+            <translation><!-- Teacher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Worker - with no professional training / laborer</masterLabel>
+            <translation><!-- Worker - with no professional training / laborer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Worker-with professional training/ skill set</masterLabel>
+            <translation><!-- Worker-with professional training/ skill set --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RuralUrban --></label>
+        <name>RuralUrban__c</name>
+        <picklistValues>
+            <masterLabel>Need Values</masterLabel>
+            <translation><!-- Need Values --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Serial Number --></label>
+        <name>Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial # --></label>
+        <name>Serial__c</name>
+    </fields>
+    <fields>
+        <label><!-- T4M_10 --></label>
+        <name>T4M_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- T4M_3 --></label>
+        <name>T4M_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- T4M_8 --></label>
+        <name>T4M_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- T4M_9 --></label>
+        <name>T4M_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- WS --></label>
+        <name>WS__c</name>
+        <picklistValues>
+            <masterLabel>Not working</masterLabel>
+            <translation><!-- Not working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired</masterLabel>
+            <translation><!-- Retired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seasonal full time worker (&gt;20 hrs / week)</masterLabel>
+            <translation><!-- Seasonal full time worker (&gt;20 hrs / week) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seasonal part-time worker (&lt;20 hrs / week)</masterLabel>
+            <translation><!-- Seasonal part-time worker (&lt;20 hrs / week) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Working full time (&gt;20 hrs / week)</masterLabel>
+            <translation><!-- Student Working full time (&gt;20 hrs / week) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Working part-time (&lt;20 hrs / week)</masterLabel>
+            <translation><!-- Student Working part-time (&lt;20 hrs / week) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working full time (&gt;20 hrs / week)</masterLabel>
+            <translation><!-- Working full time (&gt;20 hrs / week) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working part-time (&lt;20 hrs / week)</masterLabel>
+            <translation><!-- Working part-time (&lt;20 hrs / week) --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>HouseHold Member Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

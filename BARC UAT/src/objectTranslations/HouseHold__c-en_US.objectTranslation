@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HouseHold</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HouseHolds</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agricultural land --></label>
+        <name>Agricultural_land__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air Conditioner --></label>
+        <name>Air_Conditioner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assets Owned --></label>
+        <name>Assets_Owned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadband Connection --></label>
+        <name>Broadband_Connection__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Car/Jeep/Van --></label>
+        <name>CarJeepVan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ceiling Fan --></label>
+        <name>Ceiling_Fan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color TV --></label>
+        <name>Color_TV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- DQAID --></label>
+        <name>DQAID__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electricity Connection --></label>
+        <name>Electricity_Connection__c</name>
+    </fields>
+    <fields>
+        <label><!-- House Ownership --></label>
+        <name>House_Ownership__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provided by Employer</masterLabel>
+            <translation><!-- Provided by Employer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rented</masterLabel>
+            <translation><!-- Rented --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Household Status --></label>
+        <name>Household_Status__c</name>
+        <picklistValues>
+            <masterLabel>Agreed Scheduled</masterLabel>
+            <translation><!-- Agreed Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dongle Not Working</masterLabel>
+            <translation><!-- Dongle Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Door Locked</masterLabel>
+            <translation><!-- Door Locked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORWARDED</masterLabel>
+            <translation><!-- FORWARDED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Not Found</masterLabel>
+            <translation><!-- Home Not Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installed agree</masterLabel>
+            <translation><!-- Installed agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Call</masterLabel>
+            <translation><!-- Next Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Visit</masterLabel>
+            <translation><!-- Next Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Connected</masterLabel>
+            <translation><!-- Not Connected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Eligible</masterLabel>
+            <translation><!-- Not Eligible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refuse</masterLabel>
+            <translation><!-- Refuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STB Not Working</masterLabel>
+            <translation><!-- STB Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TERMINATED</masterLabel>
+            <translation><!-- TERMINATED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Issue</masterLabel>
+            <translation><!-- Technical Issue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Installation Date --></label>
+        <name>Installation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- LPG Stove --></label>
+        <name>LPG_Stove__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member BARC Employee Code --></label>
+        <name>Member_BARC_Employee_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mother Tongue --></label>
+        <name>Mother_Tongue__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCCS --></label>
+        <name>NCCS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Survey Date --></label>
+        <name>Next_Survey_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Members --></label>
+        <name>No_of_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Guests --></label>
+        <name>Number_of_Guests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Rooms --></label>
+        <name>Number_of_Rooms__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 or more</masterLabel>
+            <translation><!-- 5 or more --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Language --></label>
+        <name>Other_Language1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Language --></label>
+        <name>Other_Language2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Language Code --></label>
+        <name>Other_Language_Code3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Language Code --></label>
+        <name>Other_Language_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Language --></label>
+        <name>Other_Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Computer / Laptop --></label>
+        <name>Personal_Computer_Laptop__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pincode --></label>
+        <name>Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recruitment Date --></label>
+        <name>Recruitment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refrigerator --></label>
+        <name>Refrigerator__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Age above 2 yrs --></help>
+        <label><!-- T4MB --></label>
+        <name>T4MB__c</name>
+    </fields>
+    <fields>
+        <label><!-- T5D10 --></label>
+        <name>T5D10__c</name>
+    </fields>
+    <fields>
+        <label><!-- T5D11 --></label>
+        <name>T5D11__c</name>
+    </fields>
+    <fields>
+        <label><!-- T5D1 --></label>
+        <name>T5D1__c</name>
+    </fields>
+    <fields>
+        <label><!-- T5D2 --></label>
+        <name>T5D2__c</name>
+    </fields>
+    <fields>
+        <label><!-- T5D3 --></label>
+        <name>T5D3__c</name>
+    </fields>
+    <fields>
+        <label><!-- T5D4 --></label>
+        <name>T5D4__c</name>
+    </fields>
+    <fields>
+        <label><!-- T5D5 --></label>
+        <name>T5D5__c</name>
+    </fields>
+    <fields>
+        <label><!-- T5D6 --></label>
+        <name>T5D6__c</name>
+    </fields>
+    <fields>
+        <label><!-- T5D7 --></label>
+        <name>T5D7__c</name>
+    </fields>
+    <fields>
+        <label><!-- T5D8 --></label>
+        <name>T5D8__c</name>
+    </fields>
+    <fields>
+        <label><!-- T5D9 --></label>
+        <name>T5D9__c</name>
+    </fields>
+    <fields>
+        <label><!-- T6Q8 --></label>
+        <name>T6Q8__c</name>
+    </fields>
+    <fields>
+        <label><!-- T8Q12_1 --></label>
+        <name>T8Q12_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenement Type --></label>
+        <name>Tenement_Type__c</name>
+        <picklistValues>
+            <masterLabel>Chawl</masterLabel>
+            <translation><!-- Chawl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flat / Apartment in multi-storeyed building</masterLabel>
+            <translation><!-- Flat / Apartment in multi-storeyed building --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent floor (no other house on the same floor) in a multi-storeyed building</masterLabel>
+            <translation><!-- Independent floor (no other house on the same floor) in a multi-storeyed building --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slum</masterLabel>
+            <translation><!-- Slum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Villa / Bungalow /Kothi / Row house</masterLabel>
+            <translation><!-- Villa / Bungalow /Kothi / Row house --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TownVillage --></label>
+        <name>TownVillage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Two Wheeler --></label>
+        <name>Two_Wheeler__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of family --></label>
+        <name>Type_of_family__c</name>
+        <picklistValues>
+            <masterLabel>Any Others</masterLabel>
+            <translation><!-- Any Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint Family</masterLabel>
+            <translation><!-- Joint Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Living Alone</masterLabel>
+            <translation><!-- Living Alone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nuclear Family with Elders</masterLabel>
+            <translation><!-- Nuclear Family with Elders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nuclear Family without Elders</masterLabel>
+            <translation><!-- Nuclear Family without Elders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siblings Living Together</masterLabel>
+            <translation><!-- Siblings Living Together --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Singles / Friends Living Together</masterLabel>
+            <translation><!-- Singles / Friends Living Together --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- View TV Prog via Internet --></label>
+        <name>View_TV_Prog_via_Internet__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- WID --></label>
+        <name>WID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Washing Machine --></label>
+        <name>Washing_Machine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Working TV sets --></label>
+        <name>Working_TV_sets__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- same as Type of Family --></label>
+        <name>same_as_Type_of_Family__c</name>
+    </fields>
+    <layouts>
+        <layout>HouseHold Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Durable Information --></label>
+            <section>Durable Information</section>
+        </sections>
+        <sections>
+            <label><!-- HouseHold Address Information --></label>
+            <section>HouseHold Address Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
